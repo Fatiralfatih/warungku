@@ -1,0 +1,17 @@
+/* Start Menu-Scrollable Styles */
+[data-menu-position="scrollable"] {
+  .app-sidebar {
+    @apply absolute;
+
+    #sidebar-scroll {
+      @apply h-auto pb-0;
+    }
+  }
+  &:not([data-nav-layout="horizontal"]) {
+    .content {
+      // @apply min-h-[1300px];
+      @apply min-h-[250vh];
+    }
+  }
+}
+/* End Menu-Scrollable Styles */

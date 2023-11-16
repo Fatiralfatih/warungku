@@ -1,0 +1,12 @@
+/* Start:: Dashboard-11 Styles */
+.my-stocks-container .stock-item {
+  @apply text-xs px-5 py-4 border-b border-gray-200 dark:border-white/10;
+}
+.my-stocks-container .stock-item:not(:first-child) {
+  @apply mt-0;
+}
+.my-stocks-container .stock-link {
+  @apply p-0;
+}
+
+/* End:: Dashboard-11 Styles */

@@ -1,0 +1,66 @@
+/* Start Widgets Styles */
+.upcoming-events-list {
+  li {
+    @apply mb-7 ltr:pl-6 rtl:pr-6 relative before:absolute before:h-full before:w-1 ltr:before:left-0 rtl:before:right-0 before:rounded-md;
+
+    &:nth-child(1)::before {
+      @apply bg-primary;
+    }
+
+    &:nth-child(2)::before {
+      @apply bg-secondary;
+    }
+
+    &:nth-child(3)::before {
+      @apply bg-success;
+    }
+
+    &:nth-child(4)::before {
+      @apply bg-danger;
+    }
+
+    &:nth-child(5)::before {
+      @apply bg-info;
+    }
+
+    &:nth-child(5)::before {
+      @apply bg-warning;
+    }
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+
+.timeline-widget {
+  @apply relative before:absolute before:w-[0.125rem] before:h-full before:bg-gray-200 before:dark:bg-black/20 before:top-0 ltr:before:left-12 rtl:before:right-12;
+  .timeline-widget-list {
+    @apply mb-6 relative before:absolute before:w-3 before:h-3 ltr:before:left-[2.688rem] rtl:before:right-[2.688rem] before:top-1 before:rounded-full before:border before:border-gray-200 before:dark:border-white/10 before:bg-white before:dark:bg-bgdark;
+    &:last-child {
+      @apply mb-0;
+    }
+    .timeline-widget-content {
+      @apply max-w-xs;
+    }
+  }
+}
+
+#users-map {
+  @apply h-56;
+
+  #jvm-markers-labels-group {
+    @apply hidden;
+  }
+}
+
+.widget-table {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057] dark:text-white p-3;
+  }
+  .ti-custom-table td {
+    @apply text-xs font-medium p-3;
+  }
+}
+
+/* End Widgets Styles */

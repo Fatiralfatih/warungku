@@ -1,0 +1,22 @@
+/* Start Header-Scrollable Styles */
+[data-header-position="scrollable"] {
+  .header {
+    @apply absolute;
+  }
+  &:not([data-menu-position="scrollable"]) {
+    .app-sidebar {
+      &.sticky-pin {
+        @apply top-0 #{!important};
+      }
+    }
+    &[toggled="open"] {
+      .app-sidebar {
+        &.sticky-pin {
+          @apply mt-0;
+        }
+      }
+    }
+  }
+}
+
+/* End Header-Scrollable Styles */

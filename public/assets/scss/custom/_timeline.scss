@@ -1,0 +1,70 @@
+/* Start timeline Styles */
+
+.timeline-line {
+  @apply block w-1 bg-gray-200 dark:bg-black/20 absolute h-[98%] ltr:lg:left-1/2 rtl:lg:right-1/2 ltr:left-5 rtl:right-5;
+}
+
+.timeline-main {
+  @apply flex flex-col sm:flex-row items-center relative;
+}
+
+.timeline-left {
+  @apply flex justify-start w-full mx-auto items-center;
+
+  .timeline-body {
+    @apply w-full lg:w-1/2 sm:ltr:pl-20 sm:rtl:pr-20 ltr:pl-16 rtl:pr-16 relative after:absolute after:inline-block after:border-[10px] ltr:after:border-r-0 rtl:after:border-l-0 after:border-t-transparent after:border-b-transparent ltr:after:border-l-gray-200 rtl:after:border-r-gray-200 lg:after:rotate-0 after:rotate-180 sm:ltr:after:left-[70px] sm:rtl:after:right-[70px] ltr:after:left-[55px] rtl:after:right-[55px] after:top-[45%];
+  }
+  .timeline-body {
+    @apply ltr:lg:pr-10 rtl:lg:pl-10 ltr:lg:pl-0 rtl:lg:pr-0 ltr:lg:after:right-[30px] rtl:lg:after:left-[30px] ltr:lg:after:left-auto rtl:lg:after:right-auto #{!important};
+  }
+}
+
+.timeline-right {
+  @apply flex justify-end w-full mx-auto items-center;
+  .timeline-body {
+    @apply w-full lg:w-1/2 sm:ltr:pl-20 sm:rtl:pr-20 ltr:pl-16 rtl:pr-16 relative after:absolute after:inline-block after:border-[10px] ltr:after:border-l-0 rtl:after:border-r-0 after:border-t-transparent after:border-b-transparent ltr:after:border-r-gray-200 rtl:after:border-l-gray-200 ltr:lg:after:left-[30px] rtl:lg:after:right-[30px] sm:ltr:after:left-[70px] sm:rtl:after:right-[70px] ltr:after:left-[55px] rtl:after:right-[55px] after:top-[45%];
+  }
+  .timeline-body {
+    @apply ltr:lg:pl-10 rtl:lg:pr-10  ltr:lg:after:left-[30px] rtl:lg:after:right-[30px] #{!important};
+  }
+}
+
+.timeline-icon {
+  @apply rounded-full border-gray-200 dark:border-white/10 avatar avatar-lg absolute ltr:lg:left-[47.5%] ltr:xl:left-[48.5%] ltr:left-0 rtl:lg:right-[47.5%] rtl:xl:right-[48.5%] rtl:right-0 sm:top-auto top-[40%] flex items-center justify-center ring-0;
+}
+.dark {
+  &[dir="ltr"] {
+    .timeline-left {
+      .timeline-body {
+        @apply after:border-l-white/10;
+      }
+    }
+
+    .timeline-right {
+      .timeline-body {
+        @apply after:border-r-white/10;
+      }
+    }
+  }
+  &[dir="rtl"] {
+    .timeline-left {
+      .timeline-body {
+        @apply after:border-r-white/10;
+      }
+    }
+
+    .timeline-right {
+      .timeline-body {
+        @apply after:border-l-white/10;
+      }
+    }
+  }
+}
+.timeline-start {
+  @apply h-3 w-3 rounded-full bg-primary relative lg:ltr:left-[49.7%] lg:rtl:right-[49.7%] ltr:left-4 rtl:right-4 ;
+}
+.timeline-end {
+  @apply h-3 w-3 rounded-full bg-primary relative lg:ltr:left-[49.7%] lg:rtl:right-[49.7%] bottom-0 ltr:left-4 rtl:right-4 ;
+}
+
+/*End  timeline Styles */

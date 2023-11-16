@@ -1,0 +1,113 @@
+@layer components {
+  /* Start Chart Styles */
+  #pie-basic,
+  #polararea-basic {
+    .apexcharts-canvas {
+      @apply my-0 mx-auto;
+    }
+  }
+
+  .chartjs-chart {
+    @apply max-h-[18.75rem];
+  }
+
+  .echart-charts {
+    @apply h-80;
+  }
+  .apexcharts-legend-marker {
+    @apply ltr:mr-1 rtl:ml-1;
+  }
+  .apexcharts-tooltip.apexcharts-theme-light,
+  .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    @apply bg-white dark:bg-bgdark border-gray-200 dark:border-white/10;
+  }
+  .apexcharts-treemap-rect,
+  .apexcharts-heatmap-rect,
+  .apexcharts-marker,
+  #apexcharts-radialbarTrack-0 {
+    @apply dark:stroke-black/20;
+  }
+  .apexcharts-pie-series {
+    path {
+      @apply dark:stroke-black/20;
+    }
+  }
+  .apexcharts-legend-text {
+    @apply dark:text-white;
+  }
+  .apexcharts-legend-text,
+  .apexcharts-datalabel-value {
+    @apply dark:fill-white dark:text-white #{!important};
+  }
+  .apexcharts-radar-series.apexcharts-plot-series {
+    polygon,
+    line {
+      @apply dark:stroke-black/20;
+    }
+  }
+  .apexcharts-pie {
+    line,
+    circle {
+      @apply dark:stroke-black/20;
+    }
+  }
+  .apexcharts-toolbar {
+    @apply hidden sm:flex #{!important};
+  }
+  .apexcharts-text,
+  .apexcharts-zoom-icon svg,
+  .apexcharts-zoomin-icon svg,
+  .apexcharts-zoomout-icon svg,
+  .apexcharts-reset-icon svg,
+  .apexcharts-menu-icon svg {
+    @apply dark:fill-white/80 rotate-0 text-[7px] sm:text-xs;
+  }
+  .apexcharts-toolbar {
+    @apply z-0;
+  }
+  .apexcharts-text {
+    title,
+    tspan {
+      @apply text-gray-500 fill-gray-500;
+    }
+  }
+  #area-chart,
+  #line-chart,
+  #candlestick-basic,
+  #boxplot-basic,
+  #bubble-3d,
+  #heatmap-basic,
+  #treemap-basic {
+    .apexcharts-title-text,
+    .apexcharts-subtitle-text {
+      @apply rtl:translate-x-56;
+    }
+  }
+  #bar-chart {
+    .apexcharts-yaxis-label {
+      @apply rtl:-translate-x-20;
+    }
+  }
+  #timeline-basic,
+  #candlestick-basic,
+  #heatmap-basic {
+    .apexcharts-yaxis-label {
+      @apply rtl:-translate-x-12;
+    }
+  }
+  .apexcharts-menu {
+    @apply dark:bg-bgdark dark:border-white/10;
+  }
+  .apexcharts-theme-light .apexcharts-menu-item:hover {
+    @apply dark:bg-black/20;
+  }
+  #boxplot-basic {
+
+    .apexcharts-series{
+      path {
+        @apply dark:stroke-white/10;
+      }
+    }
+  }
+  /* End Chart Styles */
+}

@@ -1,0 +1,66 @@
+/* Start Gallery  Styles */
+
+.glightbox-clean .gslide-title {
+  @apply text-xl dark:text-white #{!important};
+}
+
+.glightbox-clean .gslide-desc {
+  @apply text-sm text-gray-500 dark:text-white/70 #{!important};
+}
+
+.gallery img {
+  @apply rounded-sm #{!important};
+}
+
+.gallery2 img {
+  @apply rounded-sm #{!important};
+}
+
+.gallery3 img {
+  @apply rounded-sm #{!important};
+}
+
+.glightbox-clean .gslide-title {
+  @apply mb-0 #{!important};
+}
+
+.inner {
+  @apply relative overflow-hidden #{!important};
+}
+
+.inner:hover .image-overlay {
+  @apply opacity-100 visible;
+}
+
+.inner .image-overlay {
+  @apply rounded-sm absolute inset-0 opacity-0 invisible bg-black/50 items-end flex p-5 overflow-hidden;
+}
+
+.image-overlay .image-caption {
+  @apply text-white m-0 text-xl;
+}
+
+.gslide-image img {
+  @apply rounded-sm;
+}
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+  @apply w-[30px] h-[30px] p-2 bg-white/20 #{!important};
+}
+.gslide iframe,
+.gslide video {
+  @apply rounded-sm overflow-hidden;
+}
+.desc-bottom .gslide-image img,
+.desc-top .gslide-image img {
+  @apply rounded-b-none #{!important};
+}
+.gslide-description.description-bottom,
+.gslide-description.description-top {
+  @apply rounded-b-md dark:bg-bgdark #{!important};
+}
+.glightbox-container .ginner-container {
+  @apply w-2/3 md:w-full #{!important};
+}
+/* End Gallery  Styles */

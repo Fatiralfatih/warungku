@@ -1,0 +1,49 @@
+@layer components {
+    
+    /* Start Dropdown Styles */
+    .ti-dropdown {
+        @apply relative inline-flex;
+    }
+    .ti-dropdown-toggle {
+        @apply py-3 px-4 inline-flex justify-center items-center gap-2 rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10;
+    }
+    .ti-dropdown-caret {
+        @apply w-2.5 h-2.5 text-gray-600 dark:text-white/70;
+    }
+    .ti-dropdown-menu {
+        @apply transition-[opacity,margin] hs-dropdown-open:opacity-100 opacity-0 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md border border-gray-200 rounded-sm p-2 dark:bg-bgdark dark:border-white/10 dark:divide-white/10;
+    }
+    .ti-dropdown-item {
+        @apply flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-50 focus:ring-0 focus:ring-primary dark:text-white/70 dark:hover:bg-black/20 dark:hover:text-gray-300;
+    }
+    .ti-dropdown-menu-hover {
+        @apply after:h-4 after:absolute after:-bottom-4 after:ltr:left-0 after:rtl:right-0 after:w-full before:h-4 before:absolute before:-top-4 before:ltr:left-0 before:rtl:right-0 before:w-full;
+    }
+    .ti-dropdown-divider {
+        @apply py-2 first:pt-0 last:pb-0;
+    }
+    .ti-dropdown-title {
+        @apply block py-2 px-3 text-xs font-medium uppercase text-gray-400 dark:text-white/70;
+    }
+    .ti-dropdown-header {
+        @apply py-3 px-5 -m-2 bg-gray-100 rounded-t-sm dark:bg-black/20;
+        .ti-dropdown-header-title {
+            @apply text-sm text-gray-500 dark:text-white;
+        }
+        .ti-dropdown-header-content {
+            @apply text-sm font-medium text-gray-800 dark:text-white;
+        }
+    }
+    .ti-dropdowm-profileimg {
+        @apply w-8 h-auto rounded-full;
+    }
+    .ti-dropdowm-profileimg-content {
+        @apply text-gray-600 font-medium truncate max-w-[7.5rem] dark:text-white/70 ;
+    }
+    .ti-dropdown-icon {
+        @apply w-4 h-4 text-gray-600 dark:text-white/70;
+    }
+    
+    /* End Dropdown Styles */
+    
+}

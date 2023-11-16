@@ -1,0 +1,57 @@
+/* Start Icon-Overlay Styles */
+
+[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
+  @media screen and (min-width: 992px) {
+    &:not([icon-overlay="open"]) {
+      .app-sidebar {
+        @apply w-24;
+
+        .side-menu__item {
+          @apply justify-center px-0;
+        }
+
+        .side-menu__label,
+        .side-menu__angle {
+          @apply hidden;
+        }
+
+        .slide__category {
+          @apply hidden before:absolute;
+        }
+
+        .main-logo {
+          &.toggle-logo {
+            @apply lg:block;
+          }
+
+          &.desktop-logo,
+          &.desktop-dark {
+            @apply lg:hidden #{!important};
+          }
+
+          &.toggle-dark {
+            @apply lg:hidden;
+          }
+        }
+
+        .slide-menu {
+          @apply hidden #{!important};
+        }
+      }
+      &.dark {
+        .app-sidebar {
+          .main-logo {
+            &.toggle-logo {
+              @apply lg:hidden;
+            }
+
+            &.toggle-dark {
+              @apply lg:block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* End Icon-Overlay Styles */

@@ -1,0 +1,308 @@
+/* Start Header Styles */
+[data-header-styles="dark"] {
+  .header {
+    --header-prime-color: 255 255 255;
+    @apply bg-bgdark border-white/10;
+
+    .sidebar-toggle {
+      @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+      svg {
+        @apply fill-white;
+      }
+    }
+    .ti-dropdown-toggle {
+      @apply bg-transparent hover:bg-black/20 border-white/10 text-gray-400 hover:text-white focus:ring-offset-white/10;
+      svg {
+        @apply fill-white;
+      }
+    }
+    #dropdown-profile {
+      @apply focus:ring-white/10;
+      img {
+        @apply ring-white/10;
+      }
+    }
+    #dropdown-flag {
+      @apply focus:ring-white/10;
+    }
+    .header-search,
+    .switcher-icon {
+      button {
+        @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        svg {
+          @apply fill-white;
+        }
+      }
+    }
+    .header-theme-mode,
+    .header-fullscreen {
+      a {
+        @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        svg {
+          @apply fill-white;
+        }
+      }
+    }
+    .responsive-logo {
+      .responsive-logo-dark {
+        @apply hidden;
+      }
+
+      .responsive-logo-light {
+        @apply block;
+      }
+    }
+  }
+}
+[data-header-styles="color"] {
+  .header {
+    --header-prime-color: 255 255 255;
+    @apply bg-primary border-white/20 bg-gradient-to-t from-black/30 to-black/30;
+
+    .sidebar-toggle {
+      @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      svg {
+        @apply fill-white;
+      }
+    }
+    .ti-dropdown-toggle {
+      @apply bg-transparent hover:bg-black/20 border-white/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      svg {
+        @apply fill-white;
+      }
+    }
+    #dropdown-profile {
+      @apply focus:ring-black/20;
+      img {
+        @apply ring-black/20;
+      }
+    }
+    #dropdown-flag {
+      @apply focus:ring-black/20;
+    }
+    .header-search,
+    .switcher-icon {
+      button {
+        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+      }
+      svg {
+        @apply fill-white;
+      }
+    }
+    .header-theme-mode,
+    .header-fullscreen {
+      a {
+        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+      }
+      svg {
+        @apply fill-white;
+      }
+    }
+    .responsive-logo {
+      .responsive-logo-dark {
+        @apply hidden;
+      }
+
+      .responsive-logo-light {
+        @apply block;
+      }
+    }
+  }
+}
+[data-header-styles="gradient"] {
+  .header {
+    --header-prime-color: 255 255 255;
+    @apply bg-gradient-to-b from-primary to-secondary border-white/20 before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30 before:-z-[1];
+
+    .sidebar-toggle {
+      @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      svg {
+        @apply fill-white;
+      }
+    }
+    .ti-dropdown-toggle {
+      @apply bg-transparent hover:bg-black/20 border-white/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      svg {
+        @apply fill-white;
+      }
+    }
+    #dropdown-profile {
+      @apply focus:ring-black/20;
+      img {
+        @apply ring-black/20;
+      }
+    }
+    #dropdown-flag {
+      @apply focus:ring-black/20;
+    }
+    .header-search,
+    .switcher-icon {
+      button {
+        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+      }
+      svg {
+        @apply fill-white;
+      }
+    }
+    .header-theme-mode,
+    .header-fullscreen {
+      a {
+        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+      }
+      svg {
+        @apply fill-white;
+      }
+    }
+    .responsive-logo {
+      .responsive-logo-dark {
+        @apply hidden;
+      }
+
+      .responsive-logo-light {
+        @apply block;
+      }
+    }
+  }
+}
+[data-header-styles="light"] {
+  .header {
+    --header-prime-color: 128 135 147;
+    @apply bg-white border-gray-200;
+
+    .sidebar-toggle {
+      @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+    }
+    .ti-dropdown-toggle {
+      @apply bg-transparent text-gray-700 hover:bg-gray-50 border-gray-200 focus:ring-offset-white focus:ring-primary;
+    }
+    #dropdown-profile {
+      @apply focus:ring-gray-400;
+      img {
+        @apply ring-white;
+      }
+    }
+    #dropdown-flag {
+      @apply focus:ring-gray-400;
+    }
+    .header-search,
+    .switcher-icon {
+      button {
+        @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+      }
+    }
+    .header-theme-mode,
+    .header-fullscreen {
+      a {
+        @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+      }
+    }
+    .responsive-logo {
+      .responsive-logo-dark {
+        @apply block #{!important};
+      }
+
+      .responsive-logo-light {
+        @apply hidden #{!important};
+      }
+    }
+  }
+}
+[data-header-styles="transparent"] {
+  .header {
+    --header-prime-color: 128 135 147;
+    @apply bg-bodybg border-gray-200;
+
+    .sidebar-toggle {
+      @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+    }
+    .ti-dropdown-toggle {
+      @apply bg-transparent text-gray-700 hover:bg-gray-50 border-gray-200 focus:ring-offset-white focus:ring-primary;
+    }
+    #dropdown-profile {
+      @apply focus:ring-gray-400;
+      img {
+        @apply ring-white;
+      }
+    }
+    #dropdown-flag {
+      @apply focus:ring-gray-400;
+    }
+    .header-search,
+    .switcher-icon {
+      button {
+        @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+      }
+    }
+    .header-theme-mode,
+    .header-fullscreen {
+      a {
+        @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
+      }
+    }
+    .responsive-logo {
+      .responsive-logo-dark {
+        @apply block;
+      }
+
+      .responsive-logo-light {
+        @apply hidden;
+      }
+    }
+  }
+  &.dark {
+    .header {
+      --header-prime-color: 255 255 255;
+      @apply border-white/10;
+
+      .sidebar-toggle {
+        @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        svg {
+          @apply fill-white;
+        }
+      }
+      .ti-dropdown-toggle {
+        @apply hover:bg-black/20 border-white/10 text-gray-400 hover:text-white focus:ring-offset-white/10;
+        svg {
+          @apply fill-white;
+        }
+      }
+      #dropdown-profile {
+        @apply focus:ring-white/10;
+        img {
+          @apply ring-white/10;
+        }
+      }
+      #dropdown-flag {
+        @apply focus:ring-white/10;
+      }
+      .header-search,
+      .switcher-icon {
+        button {
+          @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+          svg {
+            @apply fill-white;
+          }
+        }
+      }
+      .header-theme-mode,
+      .header-fullscreen {
+        a {
+          @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+          svg {
+            @apply fill-white;
+          }
+        }
+      }
+      .responsive-logo {
+        .responsive-logo-dark {
+          @apply hidden;
+        }
+
+        .responsive-logo-light {
+          @apply block;
+        }
+      }
+    }
+  }
+}
+/* End Header Styles */

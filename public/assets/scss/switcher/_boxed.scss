@@ -1,0 +1,163 @@
+/* Start Boxed Styles */
+[data-width="boxed"] {
+  @media (min-width: 1400px) {
+    body {
+      @apply bg-bodybg;
+    }
+
+    .page {
+      @apply w-[1400px] my-0 mx-auto  bg-bodybg relative shadow-xl #{!important};
+
+      .header {
+        @apply w-[1400px] my-0 mx-auto #{!important};
+      }
+      
+    }
+
+    &[data-nav-layout="horizontal"] {
+      .app-sidebar {
+        @apply w-[1400px] #{!important};
+      }
+    }
+
+    &[dir="ltr"] {
+      .page {
+        .app-sidebar {
+          @apply left-auto;
+        }
+      }
+
+      .main-chart-wrapper .chat-user-details.open {
+        @apply right-0;
+      }
+    }
+
+    &[dir="rtl"] {
+      .page {
+        .app-sidebar {
+          @apply right-auto;
+        }
+      }
+
+      .main-chart-wrapper .chat-user-details.open {
+        @apply left-0;
+      }
+    }
+
+    &.dark {
+      .page {
+        @apply shadow-[-1px_0px_13px_15px_rgba(255,255,255,0.04)] #{!important};
+      }
+    }
+
+    &[data-vertical-style="detached"] {
+      &[dir="ltr"] {
+        .page {
+          @apply pl-5;
+
+          .content {
+            @apply ml-40;
+          }
+
+        }
+      }
+      &[dir="rtl"] {
+        .page {
+          @apply pr-5;
+          .content {
+            @apply mr-40;
+          }
+
+        }
+      }
+      &[data-menu-position="scrollable"] {
+        &[dir="ltr"] {
+          .page {
+
+            .app-sidebar {
+              @apply left-8;
+            }
+
+          }
+        }
+        &[dir="rtl"] {
+          .page {
+
+            .app-sidebar {
+              @apply right-8;
+            }
+
+          }
+        }
+      }
+    }
+
+    #sales-donut {
+      @apply w-full #{!important};
+    }
+
+    .chat-info {
+      @apply min-w-[21.875rem] max-w-[21.875rem];
+    }
+
+    .main-chat-area {
+      @apply w-full max-w-full overflow-hidden;
+    }
+
+    .chat-user-details {
+      @apply hidden;
+    }
+
+    .main-chart-wrapper .main-chat-right-icons .responsive-userinfo-open {
+      @apply flex;
+    }
+
+    .main-chart-wrapper .chat-user-details.open {
+      @apply block bottom-2;
+    }
+
+    .main-chart-wrapper .chat-user-details {
+      @apply absolute;
+    }
+
+    #product-quantity {
+      @apply w-8;
+    }
+
+    .nft-img {
+      @apply hidden #{!important};
+    }
+
+    .xxxl\:col-span-2 {
+      @apply col-span-4;
+    }
+
+    .xxxl\:col-span-3,.xxxl\:col-span-4,.xxxl\:col-span-6,.xxxl\:col-span-8 {
+      @apply col-span-12;
+    }
+
+    .xxxl\:col-span-9 {
+      @apply col-span-12;
+    }
+
+    .xxxl\:flex {
+     @apply block;
+    }
+    
+    .xxxl\:space-y-0 {
+     @apply space-y-2;
+    }
+
+    .xxl\:max-w-\[250px\] {
+      @apply max-w-[160px];
+    }
+    .xxxl\:\!col-span-3 {
+      @apply col-span-6 #{!important};
+    }
+    .swiper-text {
+      @apply hidden;
+    }
+    
+  }
+}
+/* End Boxed Styles */

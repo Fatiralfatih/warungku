@@ -1,0 +1,124 @@
+/* Start notifications Styles */
+#awn-popup-wrapper .awn-popup-body.awn-popup-confirm .fa {
+  @apply text-warning #{!important};
+}
+#awn-popup-wrapper .awn-buttons .awn-btn-success {
+  @apply bg-success #{!important};
+}
+#awn-popup-wrapper .awn-buttons .awn-btn-success:hover {
+  @apply bg-success #{!important};
+}
+#awn-popup-wrapper .awn-buttons .awn-btn-cancel {
+  @apply bg-info #{!important};
+}
+#awn-popup-wrapper .awn-buttons .awn-btn-cancel:hover {
+  @apply bg-info #{!important};
+}
+.awn-toast {
+  @apply bg-gray-50 text-slate-700 dark:bg-bgdark dark:text-white #{!important};
+}
+.awn-toast-label {
+  @apply text-slate-700 dark:text-white #{!important};
+}
+.awn-toast-icon .fa {
+  @apply text-slate-700 dark:text-white #{!important};
+}
+.awn-toast-wrapper {
+  @apply border-gray-50 dark:border-bgdark #{!important};
+}
+.awn-toast-progress-bar:after {
+  @apply bg-gray-50 dark:bg-bgdark #{!important};
+}
+.awn-toast.awn-toast-success {
+  @apply text-success bg-success/20 #{!important};
+}
+.awn-toast.awn-toast-success .awn-toast-wrapper {
+  @apply border-success/50 #{!important};
+}
+.awn-toast.awn-toast-success .fa,
+.awn-toast.awn-toast-success b {
+  @apply text-success #{!important};
+}
+.awn-toast.awn-toast-success .awn-toast-progress-bar:after {
+  @apply bg-success #{!important};
+}
+.awn-toast.awn-toast-info {
+  @apply text-info bg-info/20 #{!important};
+}
+.awn-toast.awn-toast-info .awn-toast-wrapper {
+  @apply border-info/50 #{!important};
+}
+.awn-toast.awn-toast-info .fa,
+.awn-toast.awn-toast-info b {
+  @apply text-info #{!important};
+}
+.awn-toast.awn-toast-info .awn-toast-progress-bar:after {
+  @apply text-info bg-info/20 #{!important};
+}
+.awn-toast.awn-toast-alert {
+  @apply text-danger bg-danger/20 #{!important};
+}
+.awn-toast.awn-toast-alert .awn-toast-wrapper {
+  @apply border-danger/50 #{!important};
+}
+.awn-toast.awn-toast-alert .fa,
+.awn-toast.awn-toast-alert b {
+  @apply text-danger  #{!important};
+}
+.awn-toast.awn-toast-alert .awn-toast-progress-bar:after {
+  @apply bg-danger #{!important};
+}
+.awn-toast.awn-toast-warning {
+  @apply text-warning bg-warning/20 #{!important};
+}
+.awn-toast.awn-toast-warning .awn-toast-wrapper {
+  @apply border-warning/50 #{!important};
+}
+.awn-toast.awn-toast-warning .fa,
+.awn-toast.awn-toast-warning b {
+  @apply text-warning  #{!important};
+}
+.awn-toast.awn-toast-warning .awn-toast-progress-bar:after {
+  @apply bg-warning #{!important};
+}
+#awn-popup-wrapper .awn-popup-body {
+  @apply bg-white dark:bg-black/80 #{!important};
+}
+#awn-popup-wrapper .awn-popup-body.awn-popup-async-block {
+  @apply text-slate-700 dark:text-white #{!important};
+}
+.awn-popup-loading-dots {
+  @apply text-slate-500 dark:text-white/70 #{!important};
+}
+#awn-popup-wrapper .awn-popup-body.awn-popup-async-block {
+  @apply text-2xl font-semibold text-gray-500 dark:text-white/70 #{!important};
+}
+
+@keyframes awn-loading-dots {
+  0%,
+  80%,
+  to {
+    @apply shadow-gray-500 dark:shadow-white/70;
+  }
+
+  40% {
+    @apply shadow-gray-500 dark:shadow-white/70;
+  }
+}
+#awn-popup-wrapper {
+  @apply text-center bg-bgdark/80 #{!important};
+}
+
+#awn-toast-container  {
+  @apply right-0 sm:right-[24px] rtl:left-0 rtl:right-auto rtl:sm:left-[24px] z-10 #{!important};
+}
+
+.awn-toast-wrapper {
+  @apply rtl:pr-[16px] rtl:pl-[88px];
+}
+
+.awn-popup-loading-dots {
+  @apply rtl:mr-[24px] rtl:ml-0;
+}
+
+/* End notifications Styles */

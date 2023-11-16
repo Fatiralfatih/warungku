@@ -1,0 +1,101 @@
+/* Start Sweetalert  Styles */
+
+.swal2-popup {
+  @apply dark:bg-bgdark dark:text-white p-6 rounded-sm #{!important};
+}
+.swal2-title {
+  @apply p-0 text-xl mb-2 #{!important};
+}
+.swal2-icon {
+  @apply mt-0 #{!important};
+}
+.swal2-image {
+  @apply mt-0 #{!important};
+}
+
+.swal2-styled.swal2-confirm {
+  @apply bg-primary rounded-sm #{!important};
+}
+
+.swal2-styled.swal2-confirm:focus {
+  @apply shadow shadow-primary #{!important};
+}
+
+.swal2-footer {
+  @apply border-gray-200 dark:border-white/10 #{!important};
+}
+
+.swal2-styled.swal2-deny {
+  @apply bg-danger #{!important};
+}
+
+.swal2-styled.swal2-cancel {
+  @apply bg-secondary #{!important};
+}
+
+.swal2-loader {
+  @apply border-t-primary border-b-primary #{!important};
+}
+
+.swal2-file,
+.swal2-input,
+.swal2-textarea {
+  @apply border-gray-200 dark:border-white/10 #{!important};
+}
+
+.swal2-file:focus,
+.swal2-input:focus,
+.swal2-textarea:focus {
+  @apply border-primary ring-primary shadow shadow-primary #{!important};
+}
+
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+  @apply bg-danger #{!important};
+}
+
+.swal2-icon.swal2-error {
+  @apply border-danger text-danger #{!important};
+}
+
+.swal2-icon.swal2-info {
+  @apply border-info text-info #{!important};
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+  @apply border-success/50 #{!important};
+}
+
+.swal2-icon.swal2-success {
+  @apply border-success text-success #{!important};
+}
+
+.swal2-icon.swal2-question {
+  @apply border-secondary text-secondary #{!important};
+}
+
+.swal2-icon.swal2-warning {
+  @apply border-warning text-warning #{!important};
+}
+.swal2-icon {
+  @apply w-[60px] h-[60px] #{!important};
+}
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+  @apply top-[30px] w-[30px] h-1 #{!important};
+}
+.swal2-actions,
+.swal2-html-container {
+  @apply m-0 #{!important};
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"][class$="long"] {
+  @apply top-7 w-8 #{!important};
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"][class$="tip"] {
+  @apply top-[34px] w-[17px] #{!important};
+}
+.swal2-image{
+  @apply dark:brightness-50;
+}
+.swal2-icon.swal2-success .swal2-success-fix {
+  @apply bg-transparent #{!important};
+}
+/* End  Sweetalert  Styles */

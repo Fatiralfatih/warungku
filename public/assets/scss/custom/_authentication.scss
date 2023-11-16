@@ -1,0 +1,19 @@
+/* Start Authentication Styles */
+
+.authentication-page {
+  @apply sm:py-16 h-auto md:h-full flex items-center justify-center;
+}
+
+.cover {
+  @apply bg-[url('../img/authentication/1.png')] bg-cover bg-no-repeat before:bg-primary/95 before:-z-[1] before:absolute before:w-full before:h-full before:top-0 before:inset-x-0;
+}
+
+.cover1 {
+  @apply relative bg-[url('../img/authentication/1.png')] bg-cover bg-center inline-table w-full h-full bg-no-repeat before:bg-primary/95 before:-z-[1] before:absolute before:w-full before:h-full;
+}
+
+.error-basic-background {
+  @apply absolute inset-0 -z-[1];
+}
+
+/* End Authentication Styles */

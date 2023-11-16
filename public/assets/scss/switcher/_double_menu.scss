@@ -1,0 +1,260 @@
+/* Start Double-Menu Styles */
+[data-vertical-style="doublemenu"] {
+  @media screen and (min-width: 992px) {
+    .app-sidebar {
+      .slide {
+        &.has-sub {
+          @apply grid;
+        }
+      }
+      .main-sidebar {
+        @apply overflow-visible h-[90%];
+      }
+
+      .main-sidebar-header {
+        @apply w-[4.95rem];
+      }
+
+      .side-menu__icon {
+        @apply mx-auto;
+      }
+
+      .slide {
+        @apply p-0;
+      }
+
+      .slide-menu {
+        &.child1 {
+          @apply w-56;
+        }
+        &.child2,
+        &.child3 {
+          @apply w-full;
+        }
+        &.child1,
+        &.child2,
+        &.child3 {
+          @apply mt-0 #{!important};
+          .slide {
+            .side-menu__item {
+              @apply text-start flex;
+
+              &:before {
+                @apply top-[0.938rem];
+              }
+            }
+          }
+
+          .side-menu__angle {
+            @apply block  top-[0.65rem];
+          }
+        }
+      }
+
+      .slide__category,
+      .side-menu__angle {
+        @apply hidden;
+      }
+
+      .side-menu__label {
+        @apply hidden;
+      }
+
+      .slide.has-sub .slide-menu.child1 {
+        @apply absolute  bg-white dark:bg-bgdark transition-none h-full top-0 overflow-auto  #{!important};
+        .slide {
+          @apply px-3;
+        }
+      }
+
+      .simplebar-content-wrapper {
+        position: initial;
+      }
+
+      .simplebar-mask {
+        position: inherit;
+      }
+    }
+    .main-menu {
+      @apply px-[1.219rem];
+    }
+    #sidebar-scroll {
+      @apply overflow-y-visible  mt-0;
+      .main-menu-container {
+        @apply mt-[4.45rem];
+      }
+      @apply h-full #{!important};
+    }
+    .app-sidebar {
+      @apply w-20;
+      .slide.has-sub .slide-menu {
+        @apply py-2;
+      }
+      .main-sidebar-header {
+        .header-logo {
+          .desktop-logo,
+          .desktop-dark {
+            @apply hidden #{!important};
+          }
+          .toggle-logo {
+            @apply block;
+          }
+          .toggle-dark {
+            @apply hidden;
+          }
+        }
+      }
+      .side-menu__item {
+        // @apply px-0;
+      }
+    }
+    .side-menu__label1 {
+      @apply block text-base font-semibold text-primary border-b border-gray-200 py-6 px-4 h-[3.95rem] mb-4 #{!important};
+    }
+    &.dark {
+      .slide-menu.child1 {
+        @apply border-white/10 #{!important};
+      }
+      .side-menu__label1 {
+        @apply border-white/10 text-white #{!important};
+      }
+      .app-sidebar {
+        .slide.has-sub .slide-menu {
+          @apply bg-bgdark #{!important};
+        }
+        .main-sidebar-header {
+          .header-logo {
+            .toggle-logo {
+              @apply hidden;
+            }
+            .toggle-dark {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+    .double-menu-active {
+      @apply block #{!important};
+    }
+    &[toggled="double-menu-close"] {
+      .slide.has-sub .slide-menu.child1 {
+        @apply hidden #{!important};
+      }
+      .double-menu-active {
+        @apply block #{!important};
+      }
+    }
+    &[dir="ltr"] {
+      .app-sidebar {
+        .slide-menu {
+          &.child1 {
+            @apply border-r border-gray-200;
+            .slide {
+              @apply left-0;
+
+              .side-menu__item {
+                @apply pl-8 pr-4;
+
+                &:before {
+                  @apply left-3;
+                }
+              }
+            }
+
+            .side-menu__angle {
+              @apply right-4;
+            }
+          }
+        }
+
+        .slide.has-sub .slide-menu {
+          @apply left-[3.25rem] #{!important};
+
+          &.child2,
+          &.child3 {
+            @apply ml-0 px-0 #{!important};
+          }
+        }
+      }
+      .content {
+        @apply ml-20;
+      }
+      .header {
+        @apply pl-20;
+      }
+      &[toggled="double-menu-open"] {
+        .content {
+          @apply ml-[19rem];
+        }
+        .header {
+          @apply pl-[19rem];
+        }
+      }
+      &[toggled="double-menu-close"] {
+        .content {
+          @apply ml-20;
+        }
+        .header {
+          @apply pl-20;
+        }
+      }
+    }
+    &[dir="rtl"] {
+      .app-sidebar {
+        .slide-menu {
+          &.child1 {
+            @apply border-l border-gray-200;
+            .slide {
+              @apply right-0;
+
+              .side-menu__item {
+                @apply pr-8 pl-4;
+
+                &:before {
+                  @apply right-3;
+                }
+              }
+            }
+
+            .side-menu__angle {
+              @apply left-4;
+            }
+          }
+        }
+
+        .slide.has-sub .slide-menu {
+          @apply right-[3.25rem] #{!important};
+
+          &.child2,
+          &.child3 {
+            @apply mr-0 px-0 #{!important};
+          }
+        }
+      }
+      .content {
+        @apply mr-20;
+      }
+      .header {
+        @apply pr-20;
+      }
+      &[toggled="double-menu-open"] {
+        .content {
+          @apply mr-[19rem];
+        }
+        .header {
+          @apply pr-[19rem];
+        }
+      }
+      &[toggled="double-menu-close"] {
+        .content {
+          @apply mr-20;
+        }
+        .header {
+          @apply pr-20;
+        }
+      }
+    }
+  }
+}
+/* End Double-Menu Styles */

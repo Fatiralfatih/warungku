@@ -1,0 +1,21 @@
+/* Start Dashboard-1 Styles */
+
+#visitors {
+  .apexcharts-tooltip,
+  .apexcharts-xaxistooltip,
+  .apexcharts-grid {
+    @apply hidden;
+  }
+
+  .apexcharts-xaxis,
+  .apexcharts-yaxis {
+    line {
+      @apply stroke-gray-200 dark:stroke-white/10;
+    }
+  }
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-12;
+  }
+}
+
+/* End Dashboard-1 Styles */

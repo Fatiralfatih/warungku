@@ -1,0 +1,24 @@
+/* Start:: Dashboard-8 Styles */
+.attendance-table {
+  .ti-custom-table th {
+    @apply px-4;
+  }
+
+  .ti-custom-table td {
+    @apply px-4;
+  }
+}
+
+#performanceReport {
+  .apexcharts-xaxis-label {
+    @apply text-[0.35rem] sm:text-xs rotate-0;
+  }
+  .apexcharts-legend-text {
+    @apply sm:text-xs text-[10px] #{!important};
+  }
+  .apexcharts-legend {
+    @apply sm:my-0 -my-[6px];
+  }
+}
+
+/* End:: Dashboard-8 Styles */

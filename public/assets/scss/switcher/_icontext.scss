@@ -1,0 +1,73 @@
+/* Start IconText-Menu Styles */
+[data-vertical-style="icontext"][toggled="icon-text-close"] {
+  @media screen and (min-width: 992px) {
+    &:not([icon-text="open"]) {
+      .app-sidebar {
+        @apply w-36;
+        .slide__category,
+        .side-menu__angle {
+          @apply hidden;
+        }
+        .side-menu__item {
+          @apply block text-center text-xs;
+          .side-menu__icon {
+            @apply mx-auto mb-2 w-full block;
+          }
+        }
+        .slide.has-sub {
+          .slide-menu {
+            @apply hidden #{!important};
+          }
+        }
+        .main-sidebar-header {
+          .header-logo {
+            .desktop-logo,
+            .desktop-dark {
+              @apply hidden;
+            }
+            .toggle-logo {
+              @apply block;
+            }
+            .toggle-dark {
+              @apply hidden;
+            }
+          }
+        }
+        .main-menu {
+          @apply px-4;
+        }
+      }
+      &.dark {
+        .app-sidebar {
+          .main-sidebar-header {
+            .header-logo {
+              .toggle-logo {
+                @apply hidden;
+              }
+              .toggle-dark {
+                @apply block;
+              }
+            }
+          }
+        }
+      }
+    }
+    &[dir="ltr"] {
+      .content {
+        @apply ml-36;
+      }
+      .header {
+        @apply pl-36;
+      }
+    }
+    &[dir="rtl"] {
+      .content {
+        @apply mr-36;
+      }
+      .header {
+        @apply pr-36;
+      }
+    }
+  }
+}
+/* End IconText-Menu Styles */

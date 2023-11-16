@@ -1,0 +1,14 @@
+/* Start Invoice Styles */
+#invoice-modal {
+  .invoice-pay {
+    .choices__list--single {
+      @apply p-0;
+    }
+  }
+
+  .choices {
+    @apply mb-0;
+  }
+}
+
+/* End Invoice Styles */

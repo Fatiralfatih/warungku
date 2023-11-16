@@ -1,0 +1,112 @@
+/* Start Choices  Styles */
+.choices__list--multiple .choices__item {
+  @apply bg-primary border-primary #{!important};
+}
+
+.choices__inner {
+  @apply py-3 px-3 bg-white border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-bgdark dark:border-white/10 dark:text-white/70 #{!important};
+}
+
+.choices__input {
+  @apply bg-transparent mb-0 focus:ring-0 focus:shadow-none py-0 dark:placeholder:text-white/50 #{!important};
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  @apply border-gray-200 dark:border-white/10 #{!important};
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  @apply bg-gray-50 dark:bg-black/20 #{!important};
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  @apply dark:bg-bgdark;
+}
+
+.choices[data-type*="select-multiple"] .choices__button,
+.choices[data-type*="text"] .choices__button {
+  @apply border-white/30 #{!important};
+}
+
+.choices__list--multiple .choices__item[data-deletable] {
+  @apply px-2.5 #{!important};
+}
+
+.choices[data-type*="select-multiple"] .choices__button,
+.choices[data-type*="text"] .choices__button {
+  @apply w-[30px] #{!important};
+}
+
+.choices[data-type*="select-one"] .choices__input {
+  @apply py-4 #{!important};
+}
+
+.choices__heading {
+  @apply border-b-gray-200 dark:border-b-white/10 dark:text-white/70;
+}
+
+.choices[data-type*="select-one"] .choices__input {
+  @apply border-b-gray-200 dark:border-b-white/10;
+}
+
+.choices[data-type*="select-one"]::after {
+  @apply ltr:right-5 rtl:left-5 rtl:right-auto;
+}
+
+.choices[data-type*="select-one"] .choices__button {
+  @apply -mt-2 ltr:mr-8 rtl:ml-8 rtl:left-0 rtl:right-auto;
+}
+
+@media (min-width: 640px) {
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-[10px] rtl:pl-[10px];
+  }
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after {
+    @apply hidden #{!important};
+  }
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  @apply rounded-md my-1 #{!important};
+}
+
+//form-layout//
+#form-choice-select,
+#form-choice-select1 {
+  .choices__inner {
+    @apply py-0 #{!important};
+  }
+}
+
+.choices[data-type*="select-one"]::after {
+  @apply border-t-gray-200 dark:border-t-white/50 #{!important};
+}
+.choices[data-type*="select-one"].is-open::after {
+  @apply border-b-gray-200 dark:border-b-white/50 border-t-0 #{!important};
+}
+
+[dir="ltr"] .choices[data-type*="select-one"].is-open::after {
+  @apply border-t-transparent dark:border-t-transparent border-b-gray-200 dark:border-b-white/10 #{!important};
+}
+
+.choices__list--single {
+  @apply p-0 #{!important};
+}
+
+.choices[data-type*="select-one"] .choices__button {
+  @apply dark:invert;
+}
+#task-compose .choices[data-type*="select-one"] .choices__button {
+  @apply hidden;
+}
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+  @apply rtl:mr-2 rtl:-ml-1 rtl:pl-0 rtl:pr-4 rtl:border-r rtl:border-l-0 rtl:border-solid;
+}
+
+/* End Choices  Styles */

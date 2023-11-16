@@ -1,0 +1,50 @@
+/* Start:: Dashboard-5 Styles */
+
+.nft-auction-time {
+  @apply absolute top-auto bottom-1 md:bottom-5 inset-x-4 bg-white/10 backdrop-blur-[1.875rem] rounded-sm;
+}
+
+.nft-like-section {
+  @apply absolute top-4;
+}
+
+.nft-like-badge {
+  @apply bg-white/10 backdrop-blur-[1.875rem];
+}
+
+.nft-featuredcollect-image {
+  @apply xxl:h-[8.813rem] rounded-sm relative before:absolute before:w-full before:h-full before:bg-black/10 #{!important};
+}
+
+.creators-table {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057]  dark:text-white py-3 px-3;
+  }
+
+  .ti-custom-table td {
+    @apply text-xs font-medium py-3 px-3;
+  }
+}
+
+.pagination-dynamic {
+  .swiper-slide {
+    @apply block text-start text-inherit text-xs bg-transparent #{!important};
+  }
+}
+
+.nft-img {
+  @apply w-6 h-6 sm:h-[2.375rem] sm:w-[2.375rem] hidden sm:block;
+  @apply xxl:hidden #{!important};
+}
+
+.nft-img {
+  @apply xxxl:block #{!important};
+}
+
+//safari
+.nft-auction-time {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+
+/* End:: Dashboard-5 Styles */

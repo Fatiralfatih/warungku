@@ -1,0 +1,117 @@
+@layer components {
+    /* Start Box Styles */
+    .box {
+        @apply flex flex-col border bg-white border-gray-200 shadow-lg rounded-sm dark:text-gray-100 dark:bg-bgdark dark:border-white/10 dark:shadow-black/[0.05] mb-6 relative;
+    }
+
+    .box-header {
+        @apply font-medium border-b border-gray-200 rounded-t-sm px-4 py-3 dark:border-white/10;
+    }
+
+    .box-title {
+        @apply font-semibold text-gray-800 text-base ltr:mr-auto rtl:ml-auto dark:text-white;
+    }
+
+    .box-body {
+        @apply p-6;
+    }
+
+    .box-footer {
+        @apply border-t rounded-b-sm py-3 px-4 md:py-4 md:px-5 dark:border-white/10 ;
+    }
+    .overlay-box {
+        @apply relative overflow-hidden text-white/90 before:absolute before:bg-black/20 before:left-0 before:right-0 before:top-0 before:bottom-0;
+
+        .box-header {
+            @apply border-white/10;
+        }
+        .box-footer {
+            @apply border-white/10;
+        }
+    }
+    .over-content-bottom{
+        @apply top-auto;
+    }
+    .box-anchor{
+        @apply content-[] absolute top-0 right-0 left-0 bottom-0 z-[1] pointer-events-none;
+    }
+    .box.box-fullscreen {
+        @apply fixed inset-0 z-[9999] m-0 rounded-none;
+    }
+    .box-img-overlay{
+        @apply absolute inset-0 rounded-sm overflow-auto;
+    }
+
+    /* End Box Styles */
+
+    /* Start Alert Styles */
+    .alert {
+        @apply text-sm rounded-sm px-4 py-3 mb-5 last:mb-0;
+    }
+    /* End Alert Styles */
+    
+    /* Start Avatar Styles */
+    .avatar {
+        @apply h-[2.875rem] w-[2.875rem] inline-block ring-2 ring-white dark:ring-transparent;
+
+        &.avatar-xs {
+            @apply h-8 w-8;
+        }
+
+        &.avatar-sm {
+            @apply h-[2.375rem] w-[2.375rem];
+        }
+
+        &.avatar-lg {
+            @apply h-[3.875rem] w-[3.875rem];
+        }
+    }
+    /* End Avatar Styles */
+
+    /* Start Badge Styles */
+    .badge {
+        @apply inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium mb-2;
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+    /* End Badge Styles */
+
+
+    /* Start List-Group Styles */
+    .ti-list-group {
+        @apply inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium -mt-px first:rounded-t-sm first:mt-0 last:rounded-b-sm border ltr:text-left rtl:text-right dark:border-white/10;
+        &.ti-icon-link {
+            @apply focus:z-10 focus:outline-none focus:ring-0;
+        }
+        &.ti-list-group-disabled {
+            @apply cursor-not-allowed;
+        }
+    }
+    /* End List-Group Styles */
+
+    /* Start Progress Styles */
+    .ti-main-progress {
+        @apply flex w-full h-1.5 rounded-full overflow-hidden;
+        .ti-main-progress-bar {
+            @apply flex flex-col justify-center overflow-hidden;
+        }
+    }
+    /* End Progress Styles */
+
+    /* Start Spinner Styles */
+    .ti-spinner {
+        @apply animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent rounded-full;
+    }
+    /* End Spinner Styles */
+
+    /* Start Toast Styles */
+    .ti-toast {
+        @apply max-w-xs border rounded-sm shadow-lg dark:border-white/10;
+    }
+    /* End Toast Styles */
+    
+    .ti-border {
+        @apply border-[#e5e7eb];
+    }
+}

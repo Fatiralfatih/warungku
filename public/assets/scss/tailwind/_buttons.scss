@@ -1,0 +1,134 @@
+@layer components {
+
+    /* Start Buttons Styles */
+    .ti-btn {
+        @apply py-2 px-3 inline-flex justify-center items-center gap-2 rounded-sm border border-transparent font-normal focus:ring-0 focus:outline-none focus:ring-offset-0 transition-all text-sm m-1 ltr:ml-0 rtl:mr-0;
+
+        &.ti-btn-outline {
+            @apply border;
+        }
+
+        &.ti-btn-disabled {
+            @apply cursor-not-allowed opacity-50;
+        }
+    }
+
+    .ti-btn-group {
+        @apply py-3 px-4 inline-flex justify-center items-center gap-2 ltr:-ml-px rtl:-mr-px first:ltr:rounded-l-sm first:rtl:rounded-r-sm first:ltr:ml-0 first:rtl:mr-0 last:ltr:rounded-r-sm last:rtl:rounded-l-sm border font-medium align-middle focus:z-10 focus:outline-none focus:ring-0 transition-all text-sm;
+    }
+
+    .ti-btn-primary {
+        @apply bg-primary text-white hover:bg-primary focus:ring-primary dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-secondary {
+        @apply bg-secondary text-white hover:bg-secondary focus:ring-secondary dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-warning {
+        @apply bg-warning text-white hover:bg-warning focus:ring-warning dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-success {
+        @apply bg-success text-white hover:bg-success focus:ring-success dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-light {
+        @apply bg-gray-100 text-gray-800 hover:bg-gray-100 focus:ring-gray-100 dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-dark {
+        @apply bg-gray-900 text-gray-100 hover:bg-gray-900 focus:ring-white/10 dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-info {
+        @apply bg-info text-white hover:bg-info focus:ring-info dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-danger {
+        @apply bg-danger text-white hover:bg-danger focus:ring-danger dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-outline-primary {
+        @apply border-primary text-primary hover:text-white hover:bg-primary hover:border-primary focus:ring-primary dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-outline-secondary {
+        @apply border-secondary text-secondary hover:text-white hover:bg-secondary hover:border-secondary focus:ring-secondary dark:focus:ring-offset-white/10;
+    }
+    
+    .ti-btn-outline-danger {
+        @apply border-danger text-danger hover:text-white hover:bg-danger hover:border-danger focus:ring-danger dark:focus:ring-offset-white/10;
+    }
+    
+    .ti-btn-outline-warning {
+        @apply border-warning text-warning hover:text-white hover:bg-warning hover:border-warning focus:ring-warning dark:focus:ring-offset-white/10;
+    }
+    
+    .ti-btn-outline-info {
+        @apply border-info text-info hover:text-white hover:bg-info hover:border-info focus:ring-info dark:focus:ring-offset-white/10;
+    }
+    
+    .ti-btn-outline-success {
+        @apply border-success text-success hover:text-white hover:bg-success hover:border-success focus:ring-success dark:focus:ring-offset-white/10;
+    }
+    
+    .ti-btn-outline-light {
+        @apply border-gray-200 text-gray-500 hover:text-gray-500 dark:border-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-100 dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-outline-dark {
+        @apply border-gray-900 text-gray-900 hover:text-white hover:bg-gray-900 hover:border-gray-900 dark:border-white/10 dark:text-white/70 focus:ring-white/10 dark:focus:ring-offset-white/10;
+    }
+
+    .ti-btn-ghost-primary {
+        @apply text-primary hover:bg-primary/10 focus:ring-primary dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-secondary {
+        @apply text-secondary hover:bg-secondary/10 focus:ring-secondary dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-warning {
+        @apply text-warning hover:bg-warning/10 focus:ring-warning dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-info {
+        @apply text-info hover:bg-info/10 focus:ring-info dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-danger {
+        @apply text-danger hover:bg-danger/10 focus:ring-danger dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-success {
+        @apply text-success hover:bg-success/10 focus:ring-success dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-light {
+        @apply text-gray-500 hover:bg-gray-100 focus:ring-gray-100 dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-ghost-dark {
+        @apply text-gray-900 hover:bg-gray-900/10 focus:ring-white/10 dark:focus:ring-offset-white/10 dark:text-white/70 dark:hover:bg-black/20;
+    }
+    .ti-btn-soft-primary {
+        @apply bg-primary/10 text-primary hover:text-white hover:bg-primary ring-offset-white focus:ring-primary dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-secondary {
+        @apply bg-secondary/10 text-secondary hover:text-white hover:bg-secondary ring-offset-white focus:ring-secondary dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-warning {
+        @apply bg-warning/10 text-warning hover:text-white hover:bg-warning ring-offset-white focus:ring-warning dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-danger {
+        @apply bg-danger/10 text-danger hover:text-white hover:bg-danger ring-offset-white focus:ring-danger dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-info {
+        @apply bg-info/10 text-info hover:text-white hover:bg-info ring-offset-white focus:ring-info dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-success {
+        @apply bg-success/10 text-success hover:text-white hover:bg-success ring-offset-white focus:ring-success dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-light {
+        @apply bg-gray-100 dark:bg-gray-100/10 text-gray-500 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-200 ring-offset-white focus:ring-success dark:focus:ring-offset-white/10;
+    }
+    .ti-btn-soft-dark {
+        @apply bg-gray-900/10 text-gray-900 hover:text-white hover:bg-gray-900 ring-offset-white focus:ring-white/10 dark:focus:ring-offset-white/10 dark:text-white/70;
+    }
+
+    /* End Buttons Styles */
+}

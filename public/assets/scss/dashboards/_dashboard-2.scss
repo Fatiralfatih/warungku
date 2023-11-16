@@ -1,0 +1,37 @@
+/* Start::Dashboard-2 Styles */
+
+.ecommerce-icon svg {
+  @apply w-7 h-7 p-1.5 rounded-md;
+}
+.ecommerce-icon svg{
+  &.svg1 {
+    @apply bg-primary;
+  }
+  &.svg2 {
+    @apply bg-secondary;
+  }
+  &.svg3 {
+    @apply bg-danger;
+  }
+  &.svg4 {
+    @apply bg-warning;
+  }
+  &.svg5 {
+    @apply bg-info;
+  }
+  &.svg6 {
+    @apply bg-success;
+  }
+}
+
+.selling-table {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057] dark:text-white;
+  }
+
+  .ti-custom-table td {
+    @apply text-xs font-medium py-3 px-4;
+  }
+}
+
+/* End::Dashboard-2 Styles */

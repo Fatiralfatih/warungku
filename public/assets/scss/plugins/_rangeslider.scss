@@ -1,0 +1,156 @@
+/* Start Rangeslider Styles */
+.rangeslider {
+  @apply touch-none;
+}
+
+.rangeslider__fill,
+.rangeslider__handle {
+  @apply bg-primary #{!important};
+}
+
+.rangeslider__fill__bg {
+  @apply bg-gray-200 dark:bg-black/20 #{!important};
+}
+
+.rangeslider__handle {
+  @apply border-gray-200 dark:border-white/10 top-[55%] #{!important};
+}
+
+.rangeslider__fill,
+.rangeslider__fill__bg {
+  @apply h-1 #{!important};
+}
+
+//********Start Nousislider********//
+.noUi-target {
+  @apply bg-gray-50 dark:bg-black/20 border-gray-200 dark:border-white/10 shadow-none #{!important};
+}
+
+.noUi-connect {
+  @apply bg-primary #{!important};
+}
+
+#slider-round {
+  .noUi-handle {
+    @apply h-5 w-5 rounded-full bg-primary border-gray-200 dark:border-white/10 shadow-sm before:hidden after:hidden #{!important};
+  }
+}
+
+#slider-square {
+  @apply rounded-none #{!important};
+
+  .noUi-handle {
+    @apply border-0 shadow-none rounded-none bg-primary h-5 w-5 before:hidden after:hidden #{!important};
+  }
+}
+
+#color1,
+#color2,
+#color3 {
+  @apply m-3 inline-block h-52 #{!important};
+}
+
+#colorpicker {
+  @apply h-60 w-80 mx-auto my-0 p-3 border-gray-200 dark:border-white/10 #{!important};
+}
+
+#result {
+  @apply bg-gray-50 dark:bg-black/20 my-16 mx-2 h-24 w-24 inline-block align-top text-gray-500 dark:text-white/70 border-gray-200 dark:border-white/10 shadow-sm;
+}
+
+#color1 .noUi-connect {
+  @apply bg-danger #{!important};
+}
+
+#color2 .noUi-connect {
+  @apply bg-secondary #{!important};
+}
+
+#color3 .noUi-connect {
+  @apply bg-primary #{!important};
+}
+
+.c-1-color {
+  @apply bg-primary #{!important};
+}
+
+.c-2-color {
+  @apply bg-secondary #{!important};
+}
+
+.c-3-color {
+  @apply bg-danger #{!important};
+}
+
+.c-4-color {
+  @apply bg-warning #{!important};
+}
+
+.c-5-color {
+  @apply bg-info #{!important};
+}
+
+#slider-toggle {
+  @apply h-16;
+}
+
+.noUi-pips {
+  @apply text-gray-500 #{!important};
+}
+
+.noUi-marker {
+  @apply bg-gray-200 dark:bg-black/20 #{!important};
+}
+
+#secondary-colored-slider {
+  .noUi-connect {
+    @apply bg-secondary #{!important};
+  }
+}
+
+#warning-colored-slider {
+  .noUi-connect {
+    @apply bg-warning #{!important};
+  }
+}
+
+#info-colored-slider {
+  .noUi-connect {
+    @apply bg-info #{!important};
+  }
+}
+
+#success-colored-slider {
+  .noUi-connect {
+    @apply bg-success #{!important};
+  }
+}
+
+#danger-colored-slider {
+  .noUi-connect {
+    @apply bg-danger #{!important};
+  }
+}
+
+#slider-round,
+#slider-square {
+  &.noUi-horizontal .noUi-handle {
+    @apply ltr:-right-4 rtl:-left-4 -top-[2px] #{!important};
+  }
+}
+.noUi-handle {
+  @apply border-gray-200 dark:border-white/10 bg-white dark:bg-bgdark dark:shadow-sm;
+}
+.noUi-value-horizontal {
+  @apply dark:text-white;
+}
+
+//********End Nousislider********//
+.rangeslider__handle {
+  @apply rtl:dir-rtl rtl:left-0 rtl:text-right;
+}
+.rangeslider__fill {
+  @apply rtl:w-full #{!important};
+}
+
+/* End Rangeslider Styles */

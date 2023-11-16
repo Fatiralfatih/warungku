@@ -1,0 +1,23 @@
+/* Start TreeView  Styles */
+
+.tree-leaf .tree-leaf-text {
+  @apply m-1 #{!important};
+}
+
+.tree-leaf .tree-leaf-text:hover {
+  @apply text-primary #{!important};
+}
+
+.tree-leaf .tree-expando {
+  @apply bg-gray-200 dark:bg-black/20 h-[15px] leading-[9px] p-[3px] w-[15px] top-[8px] #{!important};
+}
+.tree-leaf .tree-expando {
+  @apply rtl:float-right;
+}
+.tree-leaf .tree-leaf-text {
+  @apply rtl:float-right;
+}
+.tree-leaf .tree-child-leaves {
+  @apply rtl:mr-[15px] rtl:ml-0;
+}
+/* End TreeView  Styles */

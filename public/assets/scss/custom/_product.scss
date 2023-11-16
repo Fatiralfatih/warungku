@@ -1,0 +1,165 @@
+/* Start Ecommerce Styles */
+.product-image {
+  @apply relative mx-auto border border-gray-200 dark:border-white/10 rounded-sm bg-gray-100 dark:bg-black/20;
+
+  img {
+    @apply h-[250px];
+  }
+}
+
+.product-box {
+  &:hover {
+    .product-icons {
+      @apply block;
+    }
+  }
+
+  .product-icons {
+    @apply hidden;
+  }
+}
+
+.swiper-thumbs {
+  @apply mt-5;
+
+  .swiper-slide {
+    @apply border border-gray-200 dark:border-white/10 rounded-sm bg-gray-100 dark:bg-black/20 overflow-hidden;
+  }
+
+  .swiper-slide-thumb-active {
+    @apply border-success dark:border-success;
+  }
+}
+
+.mySwiper2 {
+  .swiper-slide img {
+    @apply rounded-sm bg-gray-100 dark:bg-black/20 p-5;
+  }
+}
+
+.related-product-slide {
+  .product-box {
+    @apply mb-0 w-[385px];
+  }
+}
+
+.mySwiper {
+  .swiper-slide img {
+    @apply p-2;
+  }
+}
+
+.order-track {
+  .hs-accordion {
+    @apply ltr:pl-10 rtl:pr-10 pb-2;
+
+    &.active {
+      @apply pb-4;
+    }
+  }
+
+  .hs-accordion-content {
+    @apply ltr:pl-5 rtl:pr-5;
+  }
+
+  #order-heading-one {
+    @apply relative ltr:before:left-[16px] rtl:before:right-[16px] before:bottom-0 before:top-[4px] ltr:before:right-0 rtl:before:left-0 before:absolute before:w-[10px] before:bg-success before:h-[10px] before:rounded-full ltr:after:left-[20px] rtl:after:right-[20px] after:bottom-0 after:top-[5px] ltr:after:right-0 rtl:after:left-0 after:absolute after:w-[1px] ltr:after:border-l rtl:after:border-r after:border-dashed after:border-success after:h-full;
+  }
+
+  #order-heading-two {
+    @apply relative ltr:before:left-[16px] rtl:before:right-[16px] before:bottom-0 before:top-[4px] ltr:before:right-0 rtl:before:left-0 before:absolute before:w-[10px] before:bg-success before:h-[10px] before:rounded-full ltr:after:left-[20px] rtl:after:right-[20px] after:bottom-0 after:top-[5px] ltr:after:right-0 rtl:after:left-0 after:absolute after:w-[1px] ltr:after:border-l rtl:after:border-r after:border-dashed after:border-success after:h-full;
+  }
+
+  #order-heading-three {
+    &.active {
+      @apply pb-2;
+    }
+
+    @apply relative opacity-75 ltr:before:left-[16px] rtl:before:right-[16px] before:bottom-0 before:top-[4px] ltr:before:right-0 rtl:before:left-0 before:absolute before:w-[10px] before:bg-primary before:h-[10px] before:rounded-full ltr:after:left-[20px] rtl:after:right-[20px] after:bottom-0 after:top-[5px] ltr:after:right-0 rtl:after:left-0 after:absolute after:w-[1px] ltr:after:border-l rtl:after:border-r after:border-dashed after:border-primary after:h-full;
+  }
+
+  #order-heading-four {
+    &.active {
+      @apply pb-2;
+    }
+
+    @apply relative opacity-75 ltr:before:left-[16px] rtl:before:right-[16px] before:bottom-0 before:top-[4px] ltr:before:right-0 rtl:before:left-0 before:absolute before:w-[10px] before:bg-primary before:h-[10px] before:rounded-full ltr:after:left-[20px] rtl:after:right-[20px] after:bottom-0 after:top-[5px] ltr:after:right-0 rtl:after:left-0 after:absolute after:w-[1px] ltr:after:border-l rtl:after:border-r after:border-dashed after:border-primary after:h-full;
+  }
+
+  #order-heading-five {
+    &.active {
+      @apply pb-0;
+    }
+
+    @apply pb-0 relative opacity-75 overflow-hidden ltr:before:left-[16px] rtl:before:right-[16px] before:bottom-0 before:top-[4px] ltr:before:right-0 rtl:before:left-0 before:absolute before:w-[10px] before:bg-primary before:h-[10px] before:rounded-full;
+  }
+}
+
+.product-1 {
+  .choices__list {
+    @apply p-0;
+  }
+
+  .choices[data-type*="select-one"] .choices__button {
+    @apply hidden;
+  }
+}
+
+#product-editor {
+  .ql-editor {
+    @apply min-h-[215px];
+  }
+}
+
+#blog-edit {
+  .ql-editor {
+    @apply min-h-[250px];
+  }
+}
+
+#product-editor1 {
+  .ql-editor {
+    @apply min-h-[100px];
+  }
+}
+
+.edit-table.ti-custom-table td {
+  @apply px-4;
+}
+
+.product-des {
+  .choices__inner {
+    @apply p-2 sm:w-52  min-h-full #{!important};
+  }
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-3 rtl:pl-3;
+  }
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after {
+    @apply hidden;
+  }
+}
+.mySwiper2 {
+  .swiper-slide img {
+    @apply xxl:h-[450px];
+  }
+}
+.payment-box > input:checked ~ .payment-sec {
+  @apply bg-primary/20 text-primary border-primary;
+}
+.payment-box {
+  @apply w-full block relative;
+  .payment-sec {
+    @apply block w-full bg-white dark:bg-bgdark border border-gray-200 dark:border-white/10 rounded-sm p-4;
+  }
+  input {
+    @apply absolute -z-[1] opacity-0;
+  }
+}
+.product-1{
+  .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+    @apply px-3 #{!important};
+  }
+}
+/*End  Eccomerce Styles */

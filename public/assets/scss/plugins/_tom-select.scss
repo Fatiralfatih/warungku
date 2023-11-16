@@ -1,0 +1,67 @@
+/* Start Tom-select  Styles */
+
+.ts-dropdown {
+  @apply dark:bg-bgdark border-gray-200 dark:border-white/10 border-t border-solid rounded-md text-sm overflow-hidden #{!important};
+  .option {
+    @apply p-3 #{!important};
+  }
+}
+
+.ts-dropdown [data-selectable].option {
+  @apply dark:text-white/70;
+}
+
+.ts-dropdown .create {
+  @apply dark:text-white/70;
+}
+
+.ts-control > * {
+  @apply dark:text-white;
+}
+
+.ts-control,
+.ts-control input,
+.ts-dropdown {
+  @apply dark:text-white dark:placeholder:text-white/50;
+}
+
+.ts-control,
+.ts-wrapper.single.input-active .ts-control {
+  @apply dark:bg-bgdark;
+}
+
+.ts-control {
+  @apply border-gray-200 dark:border-white/10 shadow-none rounded-md py-3 px-4 #{!important};
+}
+
+.ts-dropdown.single,
+.ts-wrapper.single .ts-control {
+  @apply border-gray-200 dark:border-white/10 #{!important};
+}
+
+.ts-dropdown .active {
+  @apply bg-gray-50 dark:bg-black/20 dark:text-white #{!important};
+}
+
+.ts-wrapper.multi .ts-control [data-value] {
+  @apply bg-primary bg-none #{!important};
+}
+
+.ts-wrapper.single .ts-control {
+  @apply bg-none bg-white dark:bg-bgdark #{!important};
+}
+
+.ts-wrapper.multi .ts-control > div {
+  @apply border-primary #{!important};
+}
+
+.full .ts-control {
+  @apply bg-gray-50 dark:bg-black/20 #{!important};
+}
+.ts-wrapper.single .ts-control:after {
+  @apply rtl:left-[15px] rtl:right-auto;
+}
+// .ts-control {
+//   @apply overflow-auto #{!important};
+// }
+/* End Tom-select  Styles */

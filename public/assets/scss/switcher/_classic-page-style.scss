@@ -1,0 +1,29 @@
+/* Start Classic-Page Styles */
+[data-page-style="classic"] {
+  body {
+    @apply bg-white;
+  }
+
+  .box {
+    @apply shadow-none shadow-transparent border;
+  }
+
+  &.dark {
+    body {
+      @apply bg-bgdark;
+    }
+    &[data-width="boxed"] {
+      .page {
+        @apply bg-bgdark #{!important};
+      }
+    }
+  }
+  &[data-width="boxed"] {
+    .page {
+      @apply bg-white #{!important};
+    }
+  }
+}
+
+
+/* End Classic-Page Styles */

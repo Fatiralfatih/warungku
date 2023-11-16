@@ -1,0 +1,52 @@
+/* Start Map Styles */
+
+#google-map,
+#google-map-overlay,
+#map-layers,
+#map-markers,
+#streetview-map,
+#map-geofencing {
+  @apply h-72;
+}
+
+#map,
+#map1,
+#map-popup,
+#map-custom-icon,
+#interactive-map {
+  @apply h-72;
+}
+
+#vector-map,
+#marker-map,
+#marker-image-map,
+#lines-map,
+#us-map,
+#canada-map,
+#spain-map,
+#russia-map {
+  @apply h-80;
+}
+
+.jvm-tooltip {
+  @apply bg-primary #{!important};
+}
+.leaflet-pane {
+  @apply z-10 #{!important};
+}
+.leaflet-top,
+.leaflet-bottom {
+  @apply z-10 #{!important};
+}
+.jvm-zoom-btn {
+  @apply leading-[6px] dark:bg-white dark:text-gray-800 rtl:right-3 rtl:left-0 #{!important};
+}
+.leaflet-marker-icon {
+  @apply w-7 h-7 #{!important};
+}
+#jvm-markers-labels-group {
+  text {
+    @apply dark:fill-white;
+  }
+}
+/* End Map Styles */

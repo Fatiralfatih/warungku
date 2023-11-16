@@ -1,0 +1,45 @@
+/* Start:: Dashboard-9 Styles */
+.crm-recent-activity li {
+  @apply pb-6 last:pb-0 text-xs;
+}
+.crm-recent-activity .crm-timeline-content {
+  @apply w-[15.5rem];
+}
+.crm-recent-activity .crm-recent-activity-content {
+  @apply relative before:absolute before:content-[""] before:w-px before:bg-transparent ltr:before:left-[0.5625rem] rtl:before:right-[0.5625rem] before:top-[1.4375rem] last:before:hidden;
+
+  &:nth-child(1)::before {
+    @apply h-3/5 border-primary/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(2)::before {
+    @apply h-[68%] border-secondary/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(3)::before {
+    @apply h-[42%] border-success/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(4)::before {
+    @apply h-3/5 border-danger/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(5)::before {
+    @apply h-[47%] border-warning/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(6)::before {
+    @apply h-3/5 border-info/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(7)::before {
+    @apply h-3/5 border-pink-500/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(8)::before {
+    @apply h-3/5 border-primary/20 ltr:border-r rtl:border-l border-dashed;
+  }
+  &:nth-child(9)::before {
+    @apply h-3/5 border-secondary/20 ltr:border-r rtl:border-l border-dashed;
+  }
+}
+#leads{
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-20;
+  }
+}
+
+/* End:: Dashboard-9 Styles */

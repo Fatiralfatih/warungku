@@ -1,0 +1,34 @@
+/* Start:: Dashboard-4 Styles */
+.basic-subscription,
+.pro-subscription {
+  @apply relative before:absolute before:w-2 before:h-2 ltr:before:-left-[0.938rem] rtl:before:-right-[0.938rem] before:rounded-md before:top-[0.6rem];
+}
+
+.basic-subscription:before {
+  @apply bg-primary;
+}
+
+.pro-subscription:before {
+  @apply bg-[#d1dae5];
+}
+
+#candidates-chart {
+  .apexcharts-datalabels-group text {
+    @apply fill-defaultcolor dark:fill-white #{!important};
+  }
+}
+
+.recent-recruiter {
+  @apply max-w-[7rem];
+}
+.activity-table2 {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057] dark:text-white;
+  }
+
+  .ti-custom-table td {
+    @apply text-xs font-medium py-3 px-4;
+  }
+}
+
+/* End:: Dashboard-4 Styles */

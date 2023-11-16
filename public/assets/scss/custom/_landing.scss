@@ -1,0 +1,274 @@
+/* Start Landing Styles */
+[data-nav-layout="horizontal"] {
+  .landing-body {
+    @media (min-width: 992px) {
+      .app-sidebar {
+        @apply h-[3.8rem] top-0 bg-white shadow-none border-b-0 p-3 #{!important};
+
+        .main-menu-container {
+          @apply flex justify-between items-center;
+        }
+
+        .main-sidebar {
+          @apply w-full mx-0 #{!important};
+        }
+
+        .child1 {
+          .side-menu__item {
+            @apply text-menuprime before:border-menuprime #{!important};
+
+            &.active {
+              @apply text-primary before:border-primary #{!important};
+            }
+
+            &:hover {
+              @apply text-primary before:border-primary #{!important};
+            }
+          }
+        }
+
+        .side-menu__item {
+          @apply py-2 #{!important};
+
+          &.active {
+            @apply text-primary #{!important};
+          }
+
+          &:hover {
+            @apply bg-transparent text-primary #{!important};
+          }
+        }
+
+        .ti-btn-white {
+          @apply bg-white text-gray-600 hover:bg-gray-50 focus:ring-white;
+        }
+
+        &.sticky-pin {
+          @apply bg-white shadow-md #{!important};
+
+          .landing-logo-container {
+            .responsive-logo {
+              .responsive-logo-light {
+                @apply block;
+              }
+
+              .responsive-logo-dark {
+                @apply hidden;
+              }
+            }
+          }
+
+          .ti-btn-white {
+            @apply bg-black text-white hover:bg-black focus:ring-black;
+          }
+
+          .side-menu__item {
+            @apply text-menuprime active:text-white #{!important};
+
+            &.active {
+              @apply text-primary  #{!important};
+            }
+
+            &:hover {
+              @apply text-primary #{!important};
+            }
+          }
+
+          .child1 .side-menu__item.active {
+            @apply text-primary #{!important};
+          }
+        }
+      }
+
+      .app-sidebar.sticky-pin {
+        .responsive-logo .responsive-logo-dark {
+          @apply hidden;
+        }
+        .responsive-logo .responsive-logo-light {
+          @apply block;
+        }
+        .side-menu__item {
+          @apply text-gray-500 #{!important};
+          &.active {
+            @apply text-primary #{!important};
+          }
+        }
+        .child1 .side-menu__item.active {
+          @apply text-primary #{!important};
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      .side-menu__item.active,
+      .side-menu__item:active {
+        @apply text-primary #{!important};
+      }
+      .main-sidebar {
+        @apply mt-0;
+      }
+      .app-sidebar .slide-menu.child1 .side-menu__item.active,
+      .app-sidebar .slide-menu.child2 .side-menu__item.active,
+      .app-sidebar .slide-menu.child3 .side-menu__item.active {
+        @apply text-primary #{!important};
+        &:before {
+          @apply border-primary #{!important};
+        }
+      }
+    }
+
+    .landing-wrapper {
+      @apply bg-[url(../img/landing/2.png)] w-full text-white leading-normal relative before:bg-primary/60 before:absolute before:w-full before:h-full before:inset-0;
+    }
+
+    .section {
+      @apply py-16;
+    }
+
+    .shape svg {
+      @apply scale-[2] w-full h-auto origin-top;
+    }
+
+    .shape {
+      @apply -bottom-[1px] absolute pointer-events-none inset-x-0 w-full;
+    }
+
+    .section-title {
+      @apply m-auto flex;
+    }
+
+    .landing-service-img {
+      img {
+        @apply w-14 h-14;
+      }
+    }
+
+    .landing-card-primary {
+      @apply bg-primary text-white;
+
+      .landing-service-img {
+        @apply bg-white;
+      }
+    }
+
+    .container {
+      @apply px-6;
+    }
+
+    .responsive-logo .responsive-logo-dark {
+      @apply hidden;
+    }
+    .responsive-logo .responsive-logo-light {
+      @apply block;
+    }
+    #features {
+      svg {
+        [fill="#9399a1"] {
+          @apply fill-primary;
+        }
+        [fill="#4b5563"] {
+          @apply fill-secondary;
+        }
+        [fill="#6f7782"] {
+          @apply fill-secondary;
+        }
+        [fill="#b7bbc0"] {
+          @apply fill-primary/80;
+        }
+      }
+    }
+    #features {
+      svg {
+        @apply w-full h-full;
+      }
+    }
+  }
+  &.dark {
+    .landing-body {
+      @media (min-width: 992px) {
+        .app-sidebar {
+          @apply bg-bgdark #{!important};
+          .ti-btn-white {
+            @apply focus:ring-offset-white/10;
+          }
+
+          .landing-logo-container {
+            .responsive-logo {
+              .responsive-logo-light {
+                @apply hidden;
+              }
+
+              .responsive-logo-dark {
+                @apply block;
+              }
+            }
+          }
+
+          &.sticky-pin {
+            @apply bg-bgdark #{!important};
+
+            .landing-logo-container {
+              .responsive-logo {
+                .responsive-logo-light {
+                  @apply hidden;
+                }
+
+                .responsive-logo-dark {
+                  @apply block;
+                }
+              }
+            }
+
+            .ti-btn-white {
+              @apply focus:ring-offset-white/10;
+            }
+          }
+        }
+      }
+      .responsive-logo .responsive-logo-light {
+        @apply hidden;
+      }
+      .responsive-logo .responsive-logo-dark {
+        @apply block;
+      }
+      .app-sidebar.sticky-pin {
+        .side-menu__item {
+          @apply text-white/70 #{!important};
+          &.active {
+            @apply text-primary #{!important};
+          }
+        }
+        .child1 .side-menu__item.active {
+          @apply text-primary #{!important};
+        }
+      }
+    }
+  }
+  &[dir="ltr"] {
+    .landing-body {
+      @media (min-width: 992px) {
+        .app-sidebar {
+          .main-menu {
+            @apply pr-6 #{!important};
+          }
+        }
+      }
+    }
+  }
+  &[dir="rtl"] {
+    .landing-body {
+      @media (min-width: 992px) {
+        .app-sidebar {
+          .main-menu {
+            @apply pl-6 #{!important};
+          }
+        }
+      }
+      .testimonials-swipe {
+        .box {
+          @apply dir-rtl;
+        }
+      }
+    }
+  }
+}
+/* End Landing Styles */

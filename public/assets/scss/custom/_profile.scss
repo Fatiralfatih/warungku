@@ -1,0 +1,31 @@
+/* Start Profile Styles */
+.Profile-post-footer {
+  .choices {
+    @apply w-40 mb-0;
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-0 rtl:pl-0;
+  }
+
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after {
+    @apply hidden;
+  }
+
+  .choices__inner {
+    @apply min-h-[20px] p-2 #{!important};
+  }
+}
+#skills {
+  .choices__list--multiple .choices__item {
+    @apply bg-gray-100 text-gray-800 border-gray-200 dark:border-white/10 dark:bg-black/20 dark:text-gray-200 #{!important};
+  }
+  .choices[data-type*="select-multiple"] .choices__button,
+  .choices[data-type*="text"] .choices__button {
+    @apply dark:border-white/10 invert dark:invert-0 #{!important};
+  }
+}
+
+/*End  Profile Styles */

@@ -1,0 +1,15 @@
+/* Start Team Styles */
+
+.team-right {
+  .choices {
+    @apply w-56 sm:w-64 mb-0;
+  }
+  .choices__list--single {
+    @apply p-0;
+  }
+  .choices__inner {
+    @apply py-[2px] leading-8 min-h-0 #{!important};
+  }
+}
+
+/*End  Team Styles */

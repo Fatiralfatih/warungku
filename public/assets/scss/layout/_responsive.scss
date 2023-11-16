@@ -1,0 +1,44 @@
+/* Start Responsive Styles */
+[toggled="open"] {
+  .app-sidebar {
+    @apply translate-x-0 transition-all duration-300;
+    .main-sidebar-header {
+      @apply hidden;
+    }
+    #sidebar-scroll {
+      @apply mt-0;
+    } 
+    @apply lg:translate-x-0 #{!important};
+  }
+}
+[toggled="close"] {
+  .app-sidebar {
+    @apply transition-all duration-300 -translate-x-full;
+    .main-sidebar-header {
+      @apply hidden;
+    }
+    #sidebar-scroll {
+      @apply mt-0;
+    }
+    @apply lg:translate-x-0 #{!important};
+  }
+  &[dir="ltr"] {
+    .app-sidebar {
+      @apply -translate-x-full;
+    }
+  }
+  &[dir="rtl"] {
+    .app-sidebar {
+      @apply translate-x-full;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-sidebar-header {
+    @apply hidden;
+  }
+  #sidebar-scroll {
+    @apply mt-0 #{!important}; 
+  }
+}
+/* End Responsive Styles */

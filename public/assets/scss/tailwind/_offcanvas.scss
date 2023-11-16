@@ -1,0 +1,33 @@
+@layer components {
+    
+    /* Start Offcanvas Styles */
+    .ti-offcanvas {
+        @apply fixed transition-all duration-300 transform h-full bg-white dark:bg-bgdark dark:border-white/10 z-[60] shadow-md;
+
+        &.ti-offcanvas-left {
+            @apply ltr:-translate-x-full rtl:translate-x-full top-0 ltr:left-0 rtl:right-0 max-w-sm w-full ltr:border-r rtl:border-l;
+        }
+        &.ti-offcanvas-top {
+            @apply -translate-y-full top-0 inset-x-0 max-h-40 w-full border-b;
+        }
+        &.ti-offcanvas-right {
+            @apply ltr:translate-x-full rtl:-translate-x-full top-0 ltr:right-0 rtl:left-0 max-w-sm w-full ltr:border-l rtl:border-r;
+        }
+        &.ti-offcanvas-bottom {
+            @apply translate-y-full bottom-0 inset-x-0 max-h-40 w-full border-b;
+        }
+        &.open {
+            @apply translate-x-0  translate-y-0 #{!important};
+        }
+        .ti-offcanvas-header {
+           @apply flex justify-between items-center py-3 px-4 border-b dark:border-white/10;
+        }
+        .ti-offcanvas-title{
+            @apply font-bold text-gray-800 dark:text-white;
+        }
+        .ti-offcanvas-body {
+            @apply p-4 overflow-y-auto h-[90%];
+        }
+    }
+    /* End Offcanvas Styles */
+}

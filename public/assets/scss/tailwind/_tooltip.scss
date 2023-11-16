@@ -1,0 +1,13 @@
+@layer components {
+    /* Start Tooltip Styles */
+    .ti-main-tooltip {
+        @apply inline-block;
+        .ti-main-tooltip-toggle {
+            @apply block text-center;
+        }
+    }
+    .ti-main-tooltip-content {
+        @apply hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-4 bg-white border border-gray-200 text-sm text-gray-600 rounded-md shadow-md dark:bg-gray-900 dark:border-white/10 dark:text-white/70;
+    }
+    /* End Tooltip Styles */
+}

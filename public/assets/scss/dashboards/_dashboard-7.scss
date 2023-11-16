@@ -1,0 +1,84 @@
+/* Start:: Dashboard-7 Styles */
+.shape-1,
+.shape-2,
+.shape-3,
+.shape-4,
+.shape-5,
+.shape-6,
+.shape-7,
+.shape-8,
+.shape-9,
+.shape-10,
+.shape-11,
+.shape-12,
+.shape-13 {
+  @apply absolute;
+  i {
+    @apply opacity-25;
+  }
+}
+
+.shape-1 {
+  @apply ltr:left-[20%] rtl:right-[20%] top-[20%];
+}
+.shape-2 {
+  @apply ltr:left-[5%] rtl:right-[5%] top-[42%];
+}
+
+.shape-3 {
+  @apply ltr:right-[15%] rtl:left-[15%] bottom-[55%];
+}
+
+.shape-4 {
+  @apply ltr:left-[55%] rtl:right-[55%] top-[25%];
+}
+
+.shape-5 {
+  @apply ltr:left-[50%] rtl:right-[50%] bottom-[25%];
+}
+
+.shape-6 {
+  @apply ltr:right-[10%] rtl:left-[10%] bottom-[10%];
+}
+
+.shape-7 {
+  @apply ltr:left-[20%] rtl:right-[20%] bottom-[17%];
+}
+
+.shape-8 {
+  @apply ltr:right-[20%] rtl:left-[20%] bottom-[17%];
+}
+
+.shape-9 {
+  @apply ltr:right-[25%] rtl:left-[25%] top-[10%];
+}
+
+.shape-10 {
+  @apply ltr:right-[5%] rtl:left-[5%] top-[15%];
+}
+
+.shape-11 {
+  @apply ltr:left-[15%] rtl:right-[15%] bottom-[35%];
+}
+
+.shape-12 {
+  @apply ltr:left-[25%] rtl:right-[25%] top-[40%];
+}
+
+.shape-13 {
+  @apply ltr:left-[10%] rtl:right-[10%] bottom-[10%];
+}
+
+.shape-14 {
+  @apply ltr:-right-[10%] rtl:-left-[10%] -bottom-[10%];
+}
+
+.shape-15 {
+  @apply ltr:-left-[20%] rtl:-right-[20%] -bottom-[17%];
+}
+
+.shape-16 {
+  @apply ltr:-right-[20%] rtl:-left-[20%] -bottom-[17%];
+}
+
+/* End:: Dashboard-7 Styles */

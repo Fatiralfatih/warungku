@@ -1,0 +1,157 @@
+@layer components {
+  /* Start Custom Styles */
+  .page-header {
+    @apply py-5;
+  }
+
+  .main-content {
+    @apply sm:px-7 px-6;
+  }
+
+  .content {
+    @apply lg:ltr:ml-64 lg:rtl:mr-64 mt-[71px] transition-all ltr:ml-0 rtl:mr-0;
+  }
+
+  pre {
+    @apply border-gray-200 border bg-slate-200 text-[0.75rem] p-5;
+  }
+
+  html {
+    @apply font-inter;
+  }
+
+  body {
+    @apply bg-bodybg h-full text-gray-600 dark:text-white m-0 font-inter font-normal text-sm relative;
+  }
+
+  .page {
+    @apply flex flex-col h-full min-h-screen;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-[0px] h-[5px] bg-gray-100 dark:bg-black/20;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply w-[0px] h-[2px] bg-gray-300 dark:bg-black/20;
+  }
+
+  code {
+    @apply text-danger text-sm;
+  }
+
+  .icons-list {
+    @apply list-none mt-0 ltr:-mr-[1px] rtl:-ml-[1px] -mb-[1px] ml-0 p-0 flex flex-wrap;
+  }
+
+  .icons-list .icons-list-item {
+    @apply flex flex-col text-center p-2 no-underline relative items-center justify-center border border-gray-200 dark:border-white/10 rounded-md;
+
+    &:hover {
+      i {
+        @apply scale-150;
+      }
+    }
+  }
+
+  .icons-list .icons-list-item i {
+    @apply text-2xl text-primary;
+  }
+
+  .icon-label {
+    @apply text-gray-500 dark:text-white/70 text-xs mt-4;
+  }
+
+  .simplebar-scrollbar:before {
+    @apply bg-gray-200 #{!important};
+  }
+
+  .simplebar-track.simplebar-vertical {
+    @apply w-2 #{!important};
+  }
+
+  [dir="ltr"] {
+    &[toggled="icon-overlay-close"] {
+      .content {
+        @apply lg:ml-24;
+      }
+    }
+  }
+
+  [dir="rtl"] {
+    &[toggled="icon-overlay-close"] {
+      .content {
+        @apply lg:mr-24;
+      }
+    }
+  }
+
+  /* Start:: Back to Top */
+  .scrollToTop {
+    @apply bg-primary text-white fixed bottom-8 ltr:right-8 rtl:left-8 items-center justify-center text-center hidden z-[10000] h-10 w-10 bg-no-repeat bg-center transition ease-linear duration-[0.1s] rounded-md shadow-md;
+  }
+  /* Start:: Back to Top */
+  select option:active,
+  select option:hover,
+  select option:focus {
+    background-color: green !important;
+  }
+
+  /* End Custom Styles */
+  select{
+    @apply rtl:bg-[left_0.5rem_center]  ltr:pr-9 ltr:pl-2 rtl:pl-9 rtl:pr-2 ;
+  }
+  #drag-right,#drag-center ,#drag-left {
+    .box{
+      @apply touch-none;
+    }
+  }
+  #responsive-overlay {
+    @apply transition-all duration-100 fixed inset-0 z-[49] bg-gray-900 invisible bg-opacity-0 ;
+    &.active {
+      @apply  bg-opacity-50 dark:bg-opacity-80 visible;
+    }
+  }
+}
+
+@layer utilities {
+  .aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    --tw-aspect-w: 16;
+  }
+
+  .aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .aspect-w-1 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    --tw-aspect-w: 1;
+  }
+
+  .aspect-w-1 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+}

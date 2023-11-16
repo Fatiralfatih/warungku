@@ -1,0 +1,134 @@
+/* Start Mail Styles */
+#mail-compose {
+  @apply h-auto top-auto bottom-0 ltr:left-auto rtl:right-auto ltr:right-0 rtl:left-0;
+
+  .ti-modal-box {
+    @apply md:ltr:mr-7 md:ltr:ml-auto md:rtl:ml-7 md:rtl:mr-auto mx-7 md:mx-0 mt-0 md:max-w-lg max-w-md #{!important};
+  }
+}
+
+.ti-modal-min-screen,
+.ti-modal-max-screen {
+  @apply inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-white/80 focus:outline-none focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white transition-all text-sm dark:focus:ring-white/10 dark:focus:ring-offset-white/10;
+}
+
+.mail-fullscreen {
+  @apply ltr:left-0 rtl:right-0 top-0 #{!important};
+
+  .ti-modal-box {
+    @apply max-w-full w-full #{!important};
+  }
+}
+
+.mail-link,
+.mail-main {
+  @apply max-w-[650px] truncate  my-auto #{!important};
+}
+
+.mail-minscreen {
+  @apply top-auto ltr:left-auto rtl:right-auto bottom-0 h-auto #{!important};
+
+  .ti-modal-box {
+    @apply mb-0 #{!important};
+  }
+
+  &.mail-fullscreen .ti-modal-box {
+    @apply max-w-lg w-auto #{!important};
+  }
+
+  .ti-modal-header {
+    @apply border-0 #{!important};
+  }
+
+  .ti-modal-footer,
+  .ti-modal-body {
+    @apply hidden;
+  }
+}
+
+.mail-add-cc {
+  .mail-to {
+    .btn-cc,
+    .btn-bcc {
+      @apply hidden;
+    }
+
+    input {
+      @apply rounded-md;
+    }
+  }
+
+  &.mail-add-bcc {
+    .mail-cc {
+      input {
+        @apply rounded-md;
+      }
+
+      .btn-cc-bcc {
+        @apply hidden;
+      }
+    }
+
+    .mail-bcc {
+      input {
+        @apply rounded-md;
+      }
+
+      .btn-bcc-cc {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+.mail-add-bcc2 {
+  .mail-to {
+    .btn-cc,
+    .btn-bcc {
+      @apply hidden;
+    }
+
+    input {
+      @apply rounded-md;
+    }
+  }
+
+  &.mail-add-cc2 {
+    .mail-cc {
+      input {
+        @apply rounded-md;
+      }
+
+      .btn-cc-bcc {
+        @apply hidden;
+      }
+    }
+
+    .mail-bcc {
+      input {
+        @apply rounded-md;
+      }
+
+      .btn-bcc-cc {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+.icons-mail {
+  @apply hidden;
+}
+
+.main-inbox {
+  table tbody tr:hover {
+    .icons-mail2 {
+      @apply hidden;
+    }
+
+    .icons-mail {
+      @apply flex justify-center;
+    }
+  }
+}
+/* End Mail Styles */

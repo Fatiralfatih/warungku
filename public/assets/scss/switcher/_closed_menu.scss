@@ -1,0 +1,48 @@
+/* Start Closed-Menu Styles */
+[data-vertical-style="closed"] {
+  @media screen and (min-width: 992px) {
+    &[toggled="close-menu-close"] {
+      .app-sidebar {
+        @apply hidden;
+      }
+      &[dir="ltr"] {
+        .content {
+          @apply ml-0;
+        }
+        .header {
+          @apply pl-0;
+        }
+      }
+      &[dir="rtl"] {
+        .content {
+          @apply mr-0;
+        }
+        .header {
+          @apply pr-0;
+        }
+      }
+    }
+    &[toggled="close-menu-open"] {
+      .app-sidebar {
+        @apply block;
+      }
+      &[dir="ltr"] {
+        .content {
+          @apply ml-64;
+        }
+        .header {
+          @apply pl-64;
+        }
+      }
+      &[dir="rtl"] {
+        .content {
+          @apply mr-64;
+        }
+        .header {
+          @apply pr-64;
+        }
+      }
+    }
+  }
+}
+/* End Closed-Menu Styles */

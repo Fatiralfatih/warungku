@@ -1,0 +1,81 @@
+/* Start todo Styles */
+.todo-right {
+  .choices {
+    @apply w-40 mb-0;
+  }
+
+  .choices__list--single {
+    @apply p-0;
+  }
+
+  .choices__inner {
+    @apply py-[2px] leading-8 min-h-0 #{!important};
+  }
+
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after,
+  .choices[data-type*="select-one"] .choices__button {
+    @apply hidden;
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-3 rtl:pl-3;
+  }
+}
+
+.todo-table {
+  td,
+  th {
+    @apply p-2 #{!important};
+  }
+}
+.todo-box {
+  td {
+    @apply touch-none;
+  }
+  @apply touch-none;
+}
+
+/*End  todo Styles */
+
+/* Start Task Styles */
+
+.task-right {
+  .choices {
+    @apply w-40 mb-0;
+  }
+
+  .choices__list--single {
+    @apply p-0;
+  }
+
+  .choices__inner {
+    @apply py-[2px] leading-8 min-h-0 #{!important};
+  }
+
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after,
+  .choices[data-type*="select-one"] .choices__button {
+    @apply hidden;
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-3 rtl:pl-3;
+  }
+}
+
+.task-table {
+  td,
+  th {
+    @apply p-2 #{!important};
+  }
+}
+#task-compose,
+#todo-compose {
+  &.ti-modal .ti-modal-body {
+    @apply overflow-y-visible;
+  }
+}
+/*End  Task Styles */

@@ -1,0 +1,37 @@
+/* Start:: Dashboard-3 Styles */
+.crypto-buy-sell-input {
+  @apply w-3/5;
+}
+#buy-style-1,
+#sell-style-1 {
+  .choices__inner {
+    @apply sm:min-w-[5rem] border-0;
+  }
+
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after {
+    @apply hidden;
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    @apply ltr:pr-0 rtl:pl-0;
+  }
+}
+.activity-table,
+.crypto-table {
+  .ti-custom-table th {
+    @apply text-xs text-[#495057] dark:text-white;
+  }
+
+  .ti-custom-table td {
+    @apply text-xs font-medium py-4 px-4;
+  }
+}
+#crypto {
+  .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
+    @apply rtl:-translate-x-8;
+  }
+}
+
+/* End:: Dashboard-3 Styles */

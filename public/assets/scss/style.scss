@@ -1,0 +1,185 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Project                        :    Synto - HTML5 Tailwind Admin Template
+
+Created Date                   :   21/04/2023
+
+Author & Copyright Ownership   :   Spruko Technologies Private Limited 
+
+Author URL                     :   https://themeforest.net/user/spruko
+
+Support	                       :   https://support.spruko.com/
+
+License Details                :   https://spruko.com/licenses-details
+
+-------------------------------------------------------------------*/
+/*------------------- Start Table of Content 
+
+FontFamily
+Tailwind
+Variables
+Icons
+Dashboard-1
+Dashboard-2
+Dashboard-3
+Dashboard-4
+Dashboard-5
+Dashboard-6
+Dashboard-7
+Dashboard-8
+Dashboard-9
+Dashboard-11
+Custom
+Button
+Box
+Alert
+Avatar
+Badge
+List-Group
+Progress
+Spinner
+Toast
+Form
+Dropzone
+Filepond
+Color Picker
+Dropdown
+Modal
+Offcanvas
+Tooltip
+Table
+Chart
+Pagination
+Flat-pickr
+Choices
+Tom-select
+Quil Editor
+Rangeslider
+Map
+Swiper Carousel
+Sweetalert
+TreeView
+Datatable
+Calendar
+Gallery
+Header
+Vertical
+Responsive
+Horizontal
+Menu-Click
+Menu-Hover
+Icon-Click
+Icon-Hover
+switcher
+Mail
+Chat
+Ecommerce
+Invoice
+Team
+Profile
+About
+Timeline
+Todo
+Landing
+Authentication
+Widgets
+blog
+notifications
+Classic-Page Styles
+Boxed
+Menu-Scrollable
+Header-Scrollable
+Closed-Menu
+Icon-Overlay
+IconText-Menu 
+Detached-Menu
+Double-Menu
+Menu Styles
+Header Styles 
+Background Image
+
+-------------------*/
+
+/* Start FontFamily Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback");
+
+/* End Tailwind Styles Styles */
+
+@import "./tailwind/tailwind";
+
+@import "./variables";
+@import "./icons";
+
+@import "./dashboards/dashboard";
+@import "./dashboards/dashboard-2";
+@import "./dashboards/dashboard-3";
+@import "./dashboards/dashboard-4";
+@import "./dashboards/dashboard-5";
+@import "./dashboards/dashboard-6";
+@import "./dashboards/dashboard-7";
+@import "./dashboards/dashboard-8";
+@import "./dashboards/dashboard-9";
+@import "./dashboards/dashboard-11";
+
+@import "./tailwind/custom";
+@import "./tailwind/buttons";
+@import "./tailwind/components";
+@import "./tailwind/forms";
+@import "./tailwind/dropdown";
+@import "./tailwind/modal";
+@import "./tailwind/offcanvas";
+@import "./tailwind/tooltip";
+@import "./tailwind/tables";
+@import "./tailwind/charts";
+@import "./tailwind/pagination";
+
+@import "./plugins/flat-pickr";
+@import "./plugins/choices";
+@import "./plugins/tom-select";
+@import "./plugins/text-editor";
+@import "./plugins/rangeslider";
+@import "./plugins/map";
+@import "./plugins/swiper";
+@import "./plugins/sweetalert";
+@import "./plugins/treeview";
+@import "./plugins/datatable.scss";
+@import "./plugins/calendar";
+@import "./plugins/gallery";
+
+@import "./layout/header";
+@import "./layout/vertical";
+@import "./layout/responsive";
+@import "./layout/horizontal";
+@import "./layout/menu_click";
+@import "./layout/menu_hover";
+@import "./layout/icon-click";
+@import "./layout/icon-hover";
+@import "./layout/switcher";
+
+@import "./custom/mail";
+@import "./custom/chat";
+@import "./custom/product";
+@import "./custom/invoice";
+@import "./custom/team";
+@import "./custom/profile";
+@import "./custom/about";
+@import "./custom/timeline";
+@import "./custom/todo";
+@import "./custom/landing";
+@import "./custom/authentication";
+@import "./custom/widgets";
+@import "./custom/blog";
+@import "./custom/notifications";
+
+@import "./switcher/classic-page-style";
+@import "./switcher/boxed";
+@import "./switcher/menu-scrollable";
+@import "./switcher/header-scrollable";
+@import "./switcher/closed_menu";
+@import "./switcher/icon-overlay";
+@import "./switcher/icontext";
+@import "./switcher/detached_menu";
+@import "./switcher/double_menu";
+@import "./switcher/menu-styles";
+@import "./switcher/header-styles";
+@import "./switcher/bg-img-styles";

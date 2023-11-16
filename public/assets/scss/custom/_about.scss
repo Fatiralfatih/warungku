@@ -1,0 +1,12 @@
+/* Start about Styles */
+
+.about-swipe2 {
+  .swiper-slide {
+    @apply text-xs bg-transparent dark:bg-transparent;
+    .box{
+      @apply rtl:dir-rtl;
+    }
+  }
+}
+
+/* End about Styles */
