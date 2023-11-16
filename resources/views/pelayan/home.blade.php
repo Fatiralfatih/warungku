@@ -5,26 +5,7 @@
         <div class="main-content">
 
             <!-- Page Header -->
-            <div class="block justify-between page-header md:flex">
-                <div>
-                    <h3
-                        class="text-gray-700 hover:text-gray-900 dark:text-white dark:hover:text-white text-2xl font-medium">
-                        HRM Dashboard</h3>
-                </div>
-                <ol class="flex items-center whitespace-nowrap min-w-0">
-                    <li class="text-sm">
-                        <a class="flex items-center font-semibold text-primary hover:text-primary dark:text-primary truncate"
-                            href="{{ route('home') }}">
-                            Home
-                            <i
-                                class="ti ti-chevrons-right flex-shrink-0 mx-3 overflow-visible text-gray-300 dark:text-gray-300 rtl:rotate-180"></i>
-                        </a>
-                    </li>
-                    <li class="text-sm text-gray-500 hover:text-primary dark:text-white/70 " aria-current="page">
-                        HRM Dashboard
-                    </li>
-                </ol>
-            </div>
+            <x-page-header name="dsahboard pelayan" link="" />
             <!-- Page Header Close -->
 
             <!-- Start::row-1 -->
@@ -38,13 +19,11 @@
                                             class="ti ti-users text-2xl leading-none"></i></div>
                                 </div>
                                 <div class="flex-1">
-                                    <p class="text-sm">Total Employees</p>
+                                    <p class="text-sm">Total Costumer</p>
                                     <div class="flex justify-between items-center">
-                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">1,238</h5>
-                                        <span class="text-success badge bg-success/20 rounded-sm p-1"><i
-                                                class="ti ti-trending-up leading-none"></i> +1.03%</span>
+                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">
+                                            {{ $costumer }}</h5>
                                     </div>
-                                    <span class="text-xs text-gray-500 dark:text-white/70">This Month</span>
                                 </div>
                             </div>
                         </div>
@@ -54,60 +33,20 @@
                     <div class="box">
                         <div class="box-body">
                             <div class="flex">
-                                <div class="ltr:mr-3 rtl:ml-3">
-                                    <div class="avatar rounded-sm text-secondary p-2.5 bg-secondary/20 "><i
-                                            class="ti ti-users-minus text-2xl leading-none"></i></div>
-                                </div>
+                                <span class="rounded-sm p-4 bg-primary/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-white svg1" height="24px"
+                                        viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                    </svg>
+                                </span>
                                 <div class="flex-1">
-                                    <p class="text-sm">Employees In Leave</p>
+                                    <p class="text-sm">Total Pesanan</p>
                                     <div class="flex justify-between items-center">
-                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">116</h5>
-                                        <span class="text-success badge bg-success/20 rounded-sm p-1"><i
-                                                class="ti ti-trending-up leading-none"></i> +0.36%</span>
+                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">
+                                            {{ $pesanan }}</h5>
                                     </div>
-                                    <span class=" text-gray-500 dark:text-white/70 text-xs">This Month</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 md:col-span-6 xxl:col-span-3">
-                    <div class="box">
-                        <div class="box-body">
-                            <div class="flex">
-                                <div class="ltr:mr-3 rtl:ml-3">
-                                    <div class="avatar rounded-sm text-warning p-2.5 bg-warning/20 "><i
-                                            class="ti ti-briefcase text-2xl leading-none"></i></div>
-                                </div>
-                                <div class="flex-1">
-                                    <p class="text-sm">Total Clients</p>
-                                    <div class="flex justify-between items-center">
-                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">2,159</h5>
-                                        <span class="text-danger badge bg-danger/20 rounded-sm p-1"><i
-                                                class="ti ti-trending-down leading-none"></i> -1.28%</span>
-                                    </div>
-                                    <span class=" text-gray-500 dark:text-white/70 text-xs">This Month</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 md:col-span-6 xxl:col-span-3">
-                    <div class="box">
-                        <div class="box-body">
-                            <div class="flex">
-                                <div class="ltr:mr-3 rtl:ml-3">
-                                    <div class="avatar rounded-sm text-success p-2.5 bg-success/20 "><i
-                                            class="ti ti-chart-bar text-2xl leading-none"></i></div>
-                                </div>
-                                <div class="flex-1">
-                                    <p class="text-sm">New Leads</p>
-                                    <div class="flex justify-between items-center">
-                                        <h5 class="mb-0 text-2xl font-semibold text-gray-800 dark:text-white">773</h5>
-                                        <span class="text-success badge bg-success/20 rounded-sm p-1"><i
-                                                class="ti ti-trending-down leading-none"></i>+4.25%</span>
-                                    </div>
-                                    <span class=" text-gray-500 dark:text-white/70 text-xs">This Month</span>
                                 </div>
                             </div>
                         </div>

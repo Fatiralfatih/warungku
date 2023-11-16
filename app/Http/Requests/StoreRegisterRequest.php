@@ -44,7 +44,7 @@ class StoreRegisterRequest extends FormRequest
         return [
             'email.required' => 'Email Harus tidak boleh kosong',
             'password.required' => 'Password Tidak Boleh kosong',
-            'password.confirmed' => 'konfirmasi password tidak sesuai'
+            'password.confirmed' => 'cek password kembali'
         ];
     }
 }

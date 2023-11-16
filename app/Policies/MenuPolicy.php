@@ -37,7 +37,7 @@ class MenuPolicy
      */
     public function update(User $user, Menu $menu): Response
     {
-        return $user->role->pelayan
+        return Auth()->user()->role == 'pelayan'
                 ? Response::allow()
                 : Response::deny('taik');
     }

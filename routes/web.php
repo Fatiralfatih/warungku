@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 Route::group(["middleware" => ["auth"]], function () {
     // home pelayan
     Route::get('/', function () {
-        return view('pelayan.home');
+        return view('pelayan.home',[
+            'costumer' => App\Models\User::where('role','costumer')->count(),
+            'pesanan' => App\Models\Pesanan::count()
+        ]);
     })->name('home');
-
+// dada didi dudu
     Route::middleware(['pelayan'])->prefix('pelayan')->group(function () {
         // data makanan for pelayan
         Route::get('menu', [PelayanMenuController::class, 'index'])->name('pelayan.menu');
@@ -63,10 +66,6 @@ Route::group(['middleware' => 'guest'], function () {
     Route::get('login', [LoginController::class, 'login'])->name('login');
     Route::post('login/auth', [LoginController::class, 'auth'])->name('login.auth');
 });
-// costumer/index
-Route::get('/costumer/index', function () {
-    return view('costumer.index');
-})->name('costumer.index');
 // menu makanan/minuman for costumer
 Route::get('menu', [MenuController::class, 'menu'])->name('menu');
 Route::get('menu/show/{menu:nama}', [MenuController::class, 'show'])->name('menu.show');

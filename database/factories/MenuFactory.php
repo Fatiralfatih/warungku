@@ -17,7 +17,6 @@ class MenuFactory extends Factory
     public function definition(): array
     {   
         return [
-            'user_id' => mt_rand(1,4),
             'nama' => $this->faker->sentence(),
             'harga' => $this->faker->numerify('2####'),
             'status' => rand(0,1),

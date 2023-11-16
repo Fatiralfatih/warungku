@@ -523,12 +523,9 @@
                                 <ul class="slide-menu child1">
                                     <li class="slide side-menu__label1"><a href="javascript:void(0)">Dashboards</a></li>
                                     @auth
-                                        @if (Auth::user()->role == 'costumer')
-                                            <li class="slide"><a href="{{ Route('costumer.index') }}"
-                                                    class="side-menu__item">Costumer</a></li>
-                                        @else
+                                        @if (Auth::user()->role == 'pelayan')
                                             <li class="slide"><a href="{{ Route('home') }}"
-                                                    class="side-menu__item">Admin</a>
+                                                    class="side-menu__item">Pelayan</a>
                                             </li>
                                         @endif
                                     @endauth
@@ -661,8 +658,7 @@
                                                                     </div>
                                                                 </div>
                                                             </a>
-                                                            <form
-                                                                action="{{ route('keranjang.delete', [$data->id]) }}"
+                                                            <form action="{{ route('keranjang.delete', [$data->id]) }}"
                                                                 method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
