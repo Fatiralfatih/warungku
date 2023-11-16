@@ -20,6 +20,7 @@ Route::group(["middleware" => ["auth"]], function () {
     })->name('home');
 // dada didi dudu
 // push reng
+// push reng ke 2
     Route::middleware(['pelayan'])->prefix('pelayan')->group(function () {
         // data makanan for pelayan
         Route::get('menu', [PelayanMenuController::class, 'index'])->name('pelayan.menu');
