@@ -24,9 +24,9 @@ class RegisterController extends Controller
         ]);
 
         event(new Registered($data));
-        
+
         Auth::login($data);
 
-        return redirect()->route('home')->with('success', 'Daftar Berhasil');
+        return redirect()->route('menu')->with('success', 'Daftar berhasil');
     }
 }
