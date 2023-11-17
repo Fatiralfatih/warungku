@@ -80,6 +80,7 @@
                                                 @if ($menu->status)
                                                     <form action="{{ route('keranjang.store', [$menu->id]) }}" method="POST">
                                                         @csrf
+                                                        <input type="hidden" name="kuantitas" value="1">
                                                         <button type="submit"
                                                             class="z-40 absolute top-12 ltr:right-2 rtl:left-2 block bg-white dark:bg-bgdark p-2 leading-none rounded-full text-gray-500 dark:text-white text-base "><i
                                                                 class="ri ri-shopping-cart-2-line"></i>
