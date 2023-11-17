@@ -90,7 +90,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <a href="wishlist.html" class="ti-btn ti-btn-ghost-primary"><i
+                                        {{-- <a href="wishlist.html" class="ti-btn ti-btn-ghost-primary"><i
                                                 class="ri-heart-2-line"></i>Add To
                                             Favourites</a>
                                         <div class="sm:flex sm:space-x-3 product-des">
@@ -119,15 +119,12 @@
                                                     <i class="ri ri-facebook-circle-line text-lg leading-none"></i>
                                                 </button>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         @auth
-                                            @if ($menu->status)
+                                            @if ($menu->status && $menu->stok > 0)
                                                 <div>
-                                                    <button type="submit"
-                                                        class="w-full ti-btn ti-btn-primary">Tambah Keranjang</button>
-                                                    {{-- <a href="{{ route('pesanan.show') }}"
-                                                        class="w-full ti-btn ti-btn-outline ti-btn-outline-primary">Beli
-                                                        Sekarang</a> --}}
+                                                    <button type="submit" class="w-full ti-btn ti-btn-primary">Tambah
+                                                        Keranjang</button>
                                                 </div>
                                             @else
                                                 <p class="flex text-lg font-medium justify-center text-red-500">Out Of Stock

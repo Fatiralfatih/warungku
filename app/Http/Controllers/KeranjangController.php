@@ -52,19 +52,21 @@ class KeranjangController extends Controller
     function updateKuantitas(Request $request, $id)
     {
         $keranjang = Keranjang::where("id", $id)->select(['id', 'kuantitas', 'menu_id'])->with(['menu:id,stok'])->firstOrFail();
-        if ($request->kuantitas && $keranjang->kuantitas >= $keranjang->menu->stok) {
-            return redirect()->back()->with('error', 'hanya ada ' . $keranjang->menu->stok . ' stok');
-        }
-        if ($request->has('kuantitas-tambah')) {
-            $keranjang->update([
-                'kuantitas' => $request->kuantitas
-            ]);
-            return redirect()->back()->with('success', 'kuantitas ditambah');
-        } else {
-            $keranjang->update([
-                'kuantitas' => $request->kuantitas
-            ]);
-            return redirect()->back()->with('success', 'kuantitas dikurangi');
+        if ($keranjang) {
+            if ($request->kuantitas && $keranjang->kuantitas >= $keranjang->menu->stok) {
+                return redirect()->back()->with('error', 'stok dikeranjang sudah mencapai batas stok menu ');
+            }
+            if ($request->has('kuantitas-tambah')) {
+                $keranjang->update([
+                    'kuantitas' => $request->kuantitas
+                ]);
+                return redirect()->back()->with('success', 'kuantitas ditambah');
+            } else {
+                $keranjang->update([
+                    'kuantitas' => $request->kuantitas
+                ]);
+                return redirect()->back()->with('success', 'kuantitas dikurangi');
+            }
         }
     }
 

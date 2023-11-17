@@ -8,7 +8,7 @@ class MenuController extends Controller
 {
     function menu()
     {
-        $menu = Menu::with(['tipe', 'gambar', ])
+        $menu = Menu::with(['tipe', 'gambar'])
             ->filter(request(['search', 'tipe', 'status']))
             ->latest()
             ->paginate(9)

@@ -93,7 +93,7 @@
                                                     </a>
                                                 @endif
                                             </div>
-                                            @if ($menu->status)
+                                            @if ($menu->status && $menu->stok > 0)
                                                 <a href="{{ route('menu') }}?status={{ $menu->status }}"
                                                     class="z-40 absolute bottom-2 ltr:left-2 rtl:right-2 block bg-success p-1 leading-none rounded-sm text-white text-xs">Available</a>
                                             @else
