@@ -70,14 +70,11 @@
                                                 @endif
                                             </a>
                                             <div class="product-icons">
-                                                <a aria-label="anchor" href="wishlist.html"
-                                                    class="z-40 absolute top-2 ltr:right-2 rtl:left-2 block bg-white dark:bg-bgdark p-2 leading-none rounded-full text-gray-500 dark:text-white text-base"><i
-                                                        class="ri ri-heart-line"></i></a>
                                                 <a aria-label="anchor" href="{{ Route('menu.show', [$menu->nama]) }}"
                                                     class="z-40 absolute top-[5.5rem] ltr:right-2 rtl:left-2 block bg-white dark:bg-bgdark p-2 leading-[0] rounded-full text-gray-500 dark:text-white text-base"><i
                                                         class="ri ri-eye-line leading-none"></i>
                                                 </a>
-                                                @if ($menu->status)
+                                                @if ($menu->status && $menu->stok > 0)
                                                     <form action="{{ route('keranjang.store', [$menu->id]) }}" method="POST">
                                                         @csrf
                                                         <input type="hidden" name="kuantitas" value="1">
