@@ -36,7 +36,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-span-12 xxl:col-span-4">
                         <div class="box mb-0 border-0 shadow-none bg-transparent">

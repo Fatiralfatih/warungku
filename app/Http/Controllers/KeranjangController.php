@@ -24,18 +24,37 @@ class KeranjangController extends Controller
 
     function store(Request $request, $id)
     {
-        $menu = Menu::where('id', $id)->with(['keranjang'])->firstOrFail();
-        $menu->keranjang()->create([
-            'costumer_id' => Auth::id(),
-            'kuantitas' => $request->kuantitas ?? 1
-        ]);
-        return redirect()->back()->with('success', 'Menu ' . $menu->nama . ' dimasukkan keranjang');
+        try {
+            $keranjang = Keranjang::where('menu_id', $id)->first();
+            if ($keranjang) {
+                if ($request->kuantitas && $keranjang->kuantitas >= $keranjang->menu->stok) {
+                    return redirect()->back()->with('error', 'stok dikeranjang sudah mencapai batas stok menu ');
+                }
+                $keranjang->update([
+                    'menu_id' => $id,
+                    'costumer_id' => Auth::id(),
+                    'kuantitas' => $request->kuantitas + $keranjang->kuantitas
+                ]);
+            } else {
+                Keranjang::create([
+                    'menu_id' => $id,
+                    'costumer_id' => Auth::id(),
+                    'kuantitas' => $request->kuantitas
+                ]);
+            }
+
+            return redirect()->back()->with('success', 'Menu dimasukkan keranjang');
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
     }
 
-    function update(Request $request, $id)
+    function updateKuantitas(Request $request, $id)
     {
         $keranjang = Keranjang::where("id", $id)->select(['id', 'kuantitas', 'menu_id'])->with(['menu:id,stok'])->firstOrFail();
-
+        if ($request->kuantitas && $keranjang->kuantitas >= $keranjang->menu->stok) {
+            return redirect()->back()->with('error', 'hanya ada ' . $keranjang->menu->stok . ' stok');
+        }
         if ($request->has('kuantitas-tambah')) {
             $keranjang->update([
                 'kuantitas' => $request->kuantitas

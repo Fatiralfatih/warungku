@@ -53,7 +53,7 @@ Route::group(["middleware" => ["auth"]], function () {
     // keranjang
     Route::get('keranjang', [KeranjangController::class, 'index'])->name('keranjang');
     Route::post('keranjang/store/{id}', [KeranjangController::class, 'store'])->name('keranjang.store');
-    Route::post('keranjang/update/{id}', [KeranjangController::class, 'update'])->name('keranjang.update');
+    Route::post('keranjang/update/{id}', [KeranjangController::class, 'updateKuantitas'])->name('keranjang.update.kuantitas');
     Route::delete('keranjang/delete/{id}', [KeranjangController::class, 'delete'])->name('keranjang.delete');
 });
 Route::group(['middleware' => 'guest'], function () {

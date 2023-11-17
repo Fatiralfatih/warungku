@@ -643,7 +643,7 @@
                                                             <a href="{{ route('keranjang') }}"
                                                                 class="flex items-center space-x-3 rtl:space-x-reverse w-full">
                                                                 <img loading="lazy"
-                                                                    src="../assets/img/ecommerce/products/1.png"
+                                                                    src="assets/img/ecommerce/products/1.png"
                                                                     alt="product-img"
                                                                     class="avatar p-2 shadow-none  shrink-0 items-center justify-center rounded-sm bg-gray-100 dark:bg-black/20 !ring-transparent">
                                                                 <div>

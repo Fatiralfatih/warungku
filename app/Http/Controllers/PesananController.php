@@ -70,14 +70,13 @@ class PesananController extends Controller
          }
          return redirect()->route('pesanan.detail')->with('success', 'pesanan berhasil dipesan');
       } catch (\Exception $e) {
-        dd($e);
+        dd($e->getMessage());
       }
    }
 
    function detail()
    {
-      $pesanan = Pesanan::where('costumer_id', Auth::id())->with(['menu.tipe', 'alamat'])->orderByDesc('created_at')->paginate(4);
-
+      $pesanan = Pesanan::where('costumer_id', Auth::id())->with(['menu.tipe', 'alamat'])->orderByDesc('created_at')->paginate(5);
       return view('costumer.pesanan.detail', [
          'pesanans' => $pesanan,
       ]);

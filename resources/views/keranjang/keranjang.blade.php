@@ -60,7 +60,7 @@
                                                 </td>
                                                 <td>
                                                     <form
-                                                        action="{{ route('keranjang.update', $keranjang->id) }}" method="POST">
+                                                        action="{{ route('keranjang.update.kuantitas', $keranjang->id) }}" method="POST">
                                                         @csrf
                                                         <div class="flex rounded-sm">
                                                             <button aria-label="button"

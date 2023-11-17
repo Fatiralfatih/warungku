@@ -71,10 +71,6 @@
                                             <td>{{ $menu->stok }}</td>
                                             <td>{{ $menu->tipe->nama }}</td>
                                             <td class="flex jusitfy-center font-medium">
-                                                <a aria-label="anchor" href="{{ route('menu.show', [$menu->nama]) }}"
-                                                    class="w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-warning">
-                                                    <i class="ti ti-eye"></i>
-                                                </a>
                                                 <a aria-label="anchor"
                                                     href="{{ Route('pelayan.menu.edit', [$menu->id]) }}"
                                                     class="w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
