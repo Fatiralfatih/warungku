@@ -82,16 +82,6 @@
                                                 <td>Rp.{{ number_format($keranjang->menu->harga) }}</td>
                                                 <td class="text-end font-medium">
                                                     <div class="hs-tooltip ti-main-tooltip">
-                                                        <a href="wishlist.html"
-                                                            class="hs-tooltip-toggle w-10 h-10 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary">
-                                                            <i class="ti ti-heart"></i>
-                                                            <span
-                                                                class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700">
-                                                                Save To Whislist
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="hs-tooltip ti-main-tooltip">
                                                         <form action="{{ route('keranjang.delete', [$keranjang->id]) }}"
                                                             method="POST">
                                                             @csrf
