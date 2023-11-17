@@ -72,24 +72,28 @@
                                             {{-- <span
                                             class="my-auto line-through text-base text-gray-500 dark:text-white/70 font-semibold">$2999</span> --}}
                                         </div>
-                                        <div class="sm:flex sm:space-x-2">
-                                            <h5
-                                                class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">
-                                                Jumlah :</h5>
-                                            <div class="flex rounded-sm">
-                                                <button aria-label="button" type="button" id="product-quantity-minus"
-                                                    class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 ltr:rounded-l-sm rtl:rounded-r-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-5 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
-                                                    <i class="ti ti-minus"></i>
-                                                </button>
-                                                <input type="number" id="product-quantity" name="kuantitas"
-                                                    value="1"
-                                                    class="p-0 ti-form-input w-12 rounded-none focus:z-10 text-center">
-                                                <button aria-label="button" type="button" id="product-quantity-plus"
-                                                    class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8  ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
-                                                    <i class="ti ti-plus"></i>
-                                                </button>
+                                        @if ($menu->status && $menu->stok > 0)
+                                            <div class="sm:flex sm:space-x-2">
+                                                <h5
+                                                    class="font-normal text-gray-500 dark:text-white/70 text-sm my-auto w-28">
+                                                    Jumlah :</h5>
+                                                <div class="flex rounded-sm">
+                                                    <button aria-label="button" type="button"
+                                                        id="product-quantity-minus"
+                                                        class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8 ltr:rounded-l-sm rtl:rounded-r-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-5 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
+                                                        <i class="ti ti-minus"></i>
+                                                    </button>
+                                                    <input type="number" id="product-quantity" name="kuantitas"
+                                                        value="1"
+                                                        class="p-0 ti-form-input w-12 rounded-none focus:z-10 text-center">
+                                                    <button aria-label="button" type="button"
+                                                        id="product-quantity-plus"
+                                                        class="inline-flex flex-shrink-0 justify-center items-center h-8 w-8  ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold bg-primary text-white hover:bg-primary focus:z-10 focus:outline-none focus:ring-0 focus:ring-primary transition-all text-sm">
+                                                        <i class="ti ti-plus"></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endif
                                         {{-- <a href="wishlist.html" class="ti-btn ti-btn-ghost-primary"><i
                                                 class="ri-heart-2-line"></i>Add To
                                             Favourites</a>
@@ -127,7 +131,8 @@
                                                         Keranjang</button>
                                                 </div>
                                             @else
-                                                <p class="flex text-lg font-medium justify-center text-red-500">Out Of Stock
+                                                <p class="flex text-lg font-medium justify-center text-red-500">Out Of
+                                                    Stock
                                                 </p>
                                             @endif
                                         @else
