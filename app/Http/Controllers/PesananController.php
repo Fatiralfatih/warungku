@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\DB;
 
 class PesananController extends Controller
 {
-
    function show()
    {
       $keranjangs = Keranjang::where('costumer_id', Auth::id())
@@ -71,7 +70,7 @@ class PesananController extends Controller
          }
          return redirect()->route('pesanan.detail')->with('success', 'pesanan berhasil dipesan');
       } catch (\Exception $e) {
-         return redirect()->back()->with('error', $e->getMessage());
+        dd($e);
       }
    }
 

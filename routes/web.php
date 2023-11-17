@@ -38,8 +38,6 @@ Route::group(["middleware" => ["auth"]], function () {
         Route::get('data-pesanan', [PelayanPesananController::class, 'dataPesanan'])->name('data.pesanan');
         Route::post('terima-pesanan/{id}', [PelayanPesananController::class, 'terima'])->name('pesanan.terima');
     });
-
-
     // logout
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
     // pesanan for costumer
@@ -47,13 +45,11 @@ Route::group(["middleware" => ["auth"]], function () {
     Route::post('pesanan/checkout', [PesananController::class, 'checkout'])->name('pesanan.checkout');
     Route::get('pesanan/detail', [PesananController::class, 'detail'])->name('pesanan.detail');
     Route::get('pesanan/cancel/{id}', [PesananController::class, 'cancel'])->name('pesanan.cancel');
-
     // create alamat pesanan for costumer
     Route::post('pesanan/tambah-alamat', [AlamatController::class, 'store'])->name('pesanan.tambah.alamat');
     Route::get('pesanan/edit-alamat/{alamat:id}', [AlamatController::class, 'edit'])->name('pesanan.edit.alamat');
     Route::put('pesanan/update-alamat/{alamat}', [AlamatController::class, 'update'])->name('pesanan.update.alamat');
     Route::delete('pesanan/delete-alamat/{alamat}', [AlamatController::class, 'delete'])->name('pesanan.delete.alamat');
-
     // keranjang
     Route::get('keranjang', [KeranjangController::class, 'index'])->name('keranjang');
     Route::post('keranjang/store/{id}', [KeranjangController::class, 'store'])->name('keranjang.store');
