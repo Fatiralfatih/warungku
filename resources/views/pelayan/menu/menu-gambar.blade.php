@@ -150,7 +150,6 @@
                                                         <p class="mt-1 text-lg text-gray-800 dark:text-white/70">
                                                             Yakin mau Gambar Ini??
                                                         </p>
-                                                            <input type="hidden" name="oldGambar[]" value="{{ $data->gambar }}">
                                                     </div>
                                                     <div class="ti-modal-footer">
                                                         <button type="button"

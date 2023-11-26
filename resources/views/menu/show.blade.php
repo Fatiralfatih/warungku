@@ -94,36 +94,6 @@
                                                 </div>
                                             </div>
                                         @endif
-                                        {{-- <a href="wishlist.html" class="ti-btn ti-btn-ghost-primary"><i
-                                                class="ri-heart-2-line"></i>Add To
-                                            Favourites</a>
-                                        <div class="sm:flex sm:space-x-3 product-des">
-                                            <h5 class="font-bold text-sm my-auto w-28 text-gray-800 dark:text-white">
-                                                Share
-                                                :</h5>
-                                            <div class="flex space-x-1 rtl:space-x-reverse">
-                                                <button aria-label="button" type="button"
-                                                    class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
-                                                    <i class="ri ri-github-line text-lg leading-none"></i>
-                                                </button>
-                                                <button aria-label="button" type="button"
-                                                    class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
-                                                    <i class="ri ri-instagram-line text-lg leading-none"></i>
-                                                </button>
-                                                <button aria-label="button" type="button"
-                                                    class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
-                                                    <i class="ri ri-twitter-line text-lg leading-none"></i>
-                                                </button>
-                                                <button aria-label="button" type="button"
-                                                    class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
-                                                    <i class="ri ri-linkedin-line text-lg leading-none"></i>
-                                                </button>
-                                                <button aria-label="button" type="button"
-                                                    class="m-0 rounded-sm p-2 ti-btn ti-btn-outline ring-white/10 text-gray-500 dark:text-white/70 bg-white/10  border-gray-200 dark:border-white/10">
-                                                    <i class="ri ri-facebook-circle-line text-lg leading-none"></i>
-                                                </button>
-                                            </div>
-                                        </div> --}}
                                         @auth
                                             @if ($menu->status && $menu->stok > 0)
                                                 <div>

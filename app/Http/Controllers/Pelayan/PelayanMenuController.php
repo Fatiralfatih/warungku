@@ -102,8 +102,8 @@ class PelayanMenuController extends Controller
     {
         $gambar = Gambar::where('id', $id)->firstOrFail();
         if ($request->hasFile('gambar')) {
-            Storage::delete($request->gambar);
-            $gambar::update([
+            Storage::delete($gambar->gambar);
+            $gambar->update([
                 'gambar' => $request->gambar->store('gambar/menu')
             ]);
         }
@@ -112,13 +112,11 @@ class PelayanMenuController extends Controller
     }
 
 
-    function gambarDelete(Request $request, $id)
+    function gambarDelete($id)
     {
         $gambar = Gambar::where('id', $id)->firstOrFail();
-        if ($request->oldGambar) {
-            foreach ($request->oldGambar as $gambarold) {
-                Storage::delete($gambarold);
-            }
+        if($gambar){
+            Storage::delete($gambar->gambar);
         }
         $gambar->delete();
 
@@ -126,13 +124,12 @@ class PelayanMenuController extends Controller
     }
 
 
-    function delete(Request $request, $id)
+    function delete($id)
     {
-        $menu = Menu::findOrFail($id);
-
-        if ($request->oldGambar) {
-            foreach ($request->oldGambar as $gambar) {
-                Storage::delete($gambar);
+        $menu = Menu::where('id',$id)->with(['gambar'])->firstOrFail();
+        foreach ($menu->gambar as $gambar) {
+            if($gambar){
+                Storage::delete($gambar->gambar);
             }
         }
         $menu->gambar()->delete();

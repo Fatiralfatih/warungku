@@ -21,10 +21,10 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            if (Auth::user()->role == 'pelayan') {
-                return redirect()->intended('/');
+            if (Auth::check() && Auth::user()->role == 'pelayan') {
+                return redirect()->intended('home');
             }else{
-                return redirect()->intended('menu');
+                return redirect()->route('menu');
             }
         }
 

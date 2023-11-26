@@ -70,7 +70,8 @@
                                                             </button>
                                                             <input type="text" name="kuantitas"
                                                                 value="{{ old('kuantitas', $keranjang->kuantitas) }}"
-                                                                class="product-quantity p-0 ti-form-input w-20 rounded-none focus:z-10 text-center">
+                                                                class="product-quantity p-0 ti-form-input w-20 rounded-none focus:z-10 text-center"
+                                                                >
                                                             <button aria-label="button" name="kuantitas-tambah"
                                                                 type="submit"
                                                                 class="product-quantity-plus inline-flex flex-shrink-0 justify-center items-center h-8 w-8 ltr:rounded-r-sm rtl:rounded-l-sm border border-transparent font-semibold ti-btn-soft-light transition-all text-sm">

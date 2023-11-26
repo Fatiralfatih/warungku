@@ -56,7 +56,7 @@
                                             <td>
                                                 <div class="flex space-x-3 rtl:space-x-reverse">
                                                     <span
-                                                        class="inline-block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[100px]">
+                                                        class="inline-block text-sm font-semibold text-gray-800 dark:text-white my-auto truncate lg:max-w-[200px]">
                                                         {{ $menu->nama }}</span>
                                                 </div>
                                             </td>
@@ -115,10 +115,6 @@
                                                             </p>
                                                         </div>
                                                         <div class="ti-modal-footer">
-                                                            @foreach ($menu->gambar as $gambar)
-                                                                <input type="hidden" name="oldGambar[]"
-                                                                    value="{{ $gambar->gambar }}">
-                                                            @endforeach
                                                             <button type="button"
                                                                 class="hs-dropdown-toggle ti-btn ti-border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:ring-offset-white focus:ring-primary dark:bg-bgdark dark:hover:bg-black/20 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:focus:ring-offset-white/10"
                                                                 data-hs-overlay="#hapus-menu{{ $menu->id }}">

@@ -12,6 +12,7 @@ class AlamatController extends Controller
   {
     $validated = $request->validated();
     Auth::user()->alamat()->create($validated);
+
     return redirect()->back()->with('success', 'Alamat Berhasil Ditambahkan');
   }
   function edit(Alamat $alamat)
